@@ -1,0 +1,2105 @@
+{
+  "medicinal_plants_database": [
+    {
+      "id": 1,
+      "name": "Neem",
+      "scientific_name": "Azadirachta indica",
+      "local_names": {
+        "tamil": "வேம்பு (Vembu)",
+        "hindi": "नीम (Neem)",
+        "telugu": "వేప (Vepa)"
+      },
+      "uses": [
+        "Antibacterial and antifungal properties",
+        "Treats skin diseases like eczema and psoriasis",
+        "Controls diabetes and blood sugar",
+        "Boosts immunity",
+        "Treats dental problems",
+        "Purifies blood"
+      ],
+      "preparation": "Leaf paste, powder, or decoction",
+      "dosage": "5-10 leaves daily or 1-2 grams powder",
+      "precautions": "Avoid during pregnancy, may lower blood sugar excessively"
+    },
+    {
+      "id": 2,
+      "name": "Tulsi (Holy Basil)",
+      "scientific_name": "Ocimum sanctum",
+      "local_names": {
+        "tamil": "துளசி (Tulasi)",
+        "hindi": "तुलसी (Tulsi)",
+        "telugu": "తులసి (Tulasi)"
+      },
+      "uses": [
+        "Treats coughs, colds, and respiratory infections",
+        "Reduces fever",
+        "Relieves stress and anxiety",
+        "Improves immunity",
+        "Treats bronchitis and asthma",
+        "Reduces inflammation"
+      ],
+      "preparation": "Fresh leaves, tea, or extract",
+      "dosage": "5-7 leaves daily or tulsi tea twice a day",
+      "precautions": "May affect blood clotting, consult doctor if on blood thinners"
+    },
+    {
+      "id": 3,
+      "name": "Kuppaimeni",
+      "scientific_name": "Acalypha indica",
+      "local_names": {
+        "tamil": "குப்பைமேனி (Kuppaimeni)",
+        "hindi": "खोकली (Khokali)",
+        "telugu": "కుప్ప చెట్టు (Kuppa Chettu)"
+      },
+      "uses": [
+        "Treats skin diseases and eczema",
+        "Heals wounds quickly",
+        "Treats respiratory problems",
+        "Relieves digestive issues",
+        "Anti-inflammatory properties",
+        "Treats snake bites (Russell Viper)"
+      ],
+      "preparation": "Leaf paste, powder, or juice",
+      "dosage": "1/2 teaspoon powder with water",
+      "precautions": "Consult ayurvedic practitioner for proper dosage"
+    },
+    {
+      "id": 4,
+      "name": "Mint",
+      "scientific_name": "Mentha",
+      "local_names": {
+        "tamil": "புதினா (Pudina)",
+        "hindi": "पुदीना (Pudina)",
+        "telugu": "పుదీనా (Pudina)"
+      },
+      "uses": [
+        "Aids digestion and reduces bloating",
+        "Relieves nausea and headaches",
+        "Freshens breath",
+        "Treats irritable bowel syndrome",
+        "Reduces menstrual cramps",
+        "Improves respiratory health"
+      ],
+      "preparation": "Fresh leaves, tea, or oil",
+      "dosage": "Mint tea 2-3 times daily",
+      "precautions": "Avoid excessive use if you have GERD"
+    },
+    {
+      "id": 5,
+      "name": "Curry Leaves",
+      "scientific_name": "Murraya koenigii",
+      "local_names": {
+        "tamil": "கறிவேப்பிலை (Kariveppilai)",
+        "hindi": "कढ़ी पत्ता (Kadhi Patta)",
+        "telugu": "కరివేపాకు (Karivepaku)"
+      },
+      "uses": [
+        "Controls diabetes",
+        "Aids digestion",
+        "Promotes hair growth",
+        "Rich in antioxidants",
+        "Improves eyesight",
+        "Reduces cholesterol"
+      ],
+      "preparation": "Fresh leaves, powder, or paste",
+      "dosage": "8-10 fresh leaves daily",
+      "precautions": "Generally safe, no major side effects"
+    },
+    {
+      "id": 6,
+      "name": "Moringa (Drumstick)",
+      "scientific_name": "Moringa oleifera",
+      "local_names": {
+        "tamil": "முருங்கை (Murungai)",
+        "hindi": "सहजन (Sahjan)",
+        "telugu": "మునగ (Munaga)"
+      },
+      "uses": [
+        "Rich in vitamins A, C, and minerals",
+        "Anti-inflammatory properties",
+        "Lowers blood sugar",
+        "Boosts immunity",
+        "Improves bone health",
+        "Promotes wound healing"
+      ],
+      "preparation": "Fresh leaves, powder, or tea",
+      "dosage": "1-2 teaspoons powder daily",
+      "precautions": "Avoid large amounts during pregnancy"
+    },
+    {
+      "id": 7,
+      "name": "Aloe Vera",
+      "scientific_name": "Aloe barbadensis miller",
+      "local_names": {
+        "tamil": "கற்றாழை (Katrazhai)",
+        "hindi": "घृतकुमारी (Ghritkumari)",
+        "telugu": "కలబంద (Kalabanda)"
+      },
+      "uses": [
+        "Heals burns and wounds",
+        "Soothes skin irritation",
+        "Aids digestion and relieves constipation",
+        "Moisturizes skin",
+        "Reduces blood sugar",
+        "Improves dental health"
+      ],
+      "preparation": "Fresh gel, juice, or topical application",
+      "dosage": "1-2 tablespoons gel/juice daily",
+      "precautions": "Latex can cause diarrhea, use gel only"
+    },
+    {
+      "id": 8,
+      "name": "Guava Leaves",
+      "scientific_name": "Psidium guajava",
+      "local_names": {
+        "tamil": "கொய்யா இலை (Koiya Ilai)",
+        "hindi": "अमरूद के पत्ते (Amrud ke Patte)",
+        "telugu": "జామ ఆకులు (Jama Akulu)"
+      },
+      "uses": [
+        "Treats diarrhea",
+        "Controls diabetes",
+        "Promotes oral health",
+        "Aids weight loss",
+        "Reduces menstrual pain",
+        "Improves heart health"
+      ],
+      "preparation": "Tea, decoction, or powder",
+      "dosage": "Guava leaf tea twice daily",
+      "precautions": "May cause constipation if overused"
+    },
+    {
+      "id": 9,
+      "name": "Papaya Leaves",
+      "scientific_name": "Carica papaya",
+      "local_names": {
+        "tamil": "பப்பாளி இலை (Papali Ilai)",
+        "hindi": "पपीता के पत्ते (Papita ke Patte)",
+        "telugu": "బొప్పాయి ఆకులు (Boppayi Akulu)"
+      },
+      "uses": [
+        "Increases platelet count (dengue treatment)",
+        "Aids digestion",
+        "Antimalarial properties",
+        "Treats skin problems",
+        "Improves immunity",
+        "Reduces inflammation"
+      ],
+      "preparation": "Juice, extract, or tea",
+      "dosage": "30ml juice twice daily for dengue",
+      "precautions": "Very bitter, may cause stomach upset"
+    },
+    {
+      "id": 10,
+      "name": "Betel Leaves",
+      "scientific_name": "Piper betle",
+      "local_names": {
+        "tamil": "வெற்றிலை (Vettrilai)",
+        "hindi": "पान (Paan)",
+        "telugu": "తామలపాకు (Tamalapaku)"
+      },
+      "uses": [
+        "Aids digestion",
+        "Treats coughs and colds",
+        "Antiseptic for wounds",
+        "Freshens breath",
+        "Relieves headaches",
+        "Boosts appetite"
+      ],
+      "preparation": "Fresh leaves, paste, or juice",
+      "dosage": "1-2 leaves after meals",
+      "precautions": "Avoid excessive chewing, may stain teeth"
+    },
+    {
+      "id": 11,
+      "name": "Ashwagandha",
+      "scientific_name": "Withania somnifera",
+      "local_names": {
+        "tamil": "அமுக்கரா (Amukkara)",
+        "hindi": "अश्वगंधा (Ashwagandha)",
+        "telugu": "అశ్వగంధ (Ashwagandha)"
+      },
+      "uses": [
+        "Reduces stress and anxiety",
+        "Boosts energy and stamina",
+        "Improves cognitive function",
+        "Enhances muscle strength",
+        "Regulates thyroid function",
+        "Improves sleep quality"
+      ],
+      "preparation": "Root powder, extract, or capsules",
+      "dosage": "3-6 grams powder daily",
+      "precautions": "Avoid during pregnancy, may interact with thyroid medications"
+    },
+    {
+      "id": 12,
+      "name": "Brahmi",
+      "scientific_name": "Bacopa monnieri",
+      "local_names": {
+        "tamil": "பிரமி (Pirami)",
+        "hindi": "ब्राह्मी (Brahmi)",
+        "telugu": "బ్రాహ్మి (Brahmi)"
+      },
+      "uses": [
+        "Improves memory and concentration",
+        "Reduces anxiety and stress",
+        "Treats epilepsy",
+        "Enhances cognitive function",
+        "Reduces inflammation",
+        "Supports respiratory health"
+      ],
+      "preparation": "Powder, juice, or oil",
+      "dosage": "5-10 grams powder daily",
+      "precautions": "May cause digestive upset initially"
+    },
+    {
+      "id": 13,
+      "name": "Turmeric",
+      "scientific_name": "Curcuma longa",
+      "local_names": {
+        "tamil": "மஞ்சள் (Manjal)",
+        "hindi": "हल्दी (Haldi)",
+        "telugu": "పసుపు (Pasupu)"
+      },
+      "uses": [
+        "Anti-inflammatory properties",
+        "Heals wounds and cuts",
+        "Treats skin conditions",
+        "Boosts immunity",
+        "Improves digestion",
+        "Reduces arthritis pain"
+      ],
+      "preparation": "Powder, paste, or milk",
+      "dosage": "1/2 to 1 teaspoon powder daily",
+      "precautions": "May interfere with blood thinners"
+    },
+    {
+      "id": 14,
+      "name": "Ginger",
+      "scientific_name": "Zingiber officinale",
+      "local_names": {
+        "tamil": "இஞ்சி (Inji)",
+        "hindi": "अदरक (Adrak)",
+        "telugu": "అల్లం (Allam)"
+      },
+      "uses": [
+        "Treats nausea and vomiting",
+        "Reduces inflammation",
+        "Relieves menstrual pain",
+        "Improves digestion",
+        "Reduces muscle pain",
+        "Lowers blood sugar"
+      ],
+      "preparation": "Fresh root, tea, or powder",
+      "dosage": "1-2 grams daily",
+      "precautions": "May increase bleeding risk, avoid before surgery"
+    },
+    {
+      "id": 15,
+      "name": "Fenugreek",
+      "scientific_name": "Trigonella foenum-graecum",
+      "local_names": {
+        "tamil": "வெந்தயம் (Vendhayam)",
+        "hindi": "मेथी (Methi)",
+        "telugu": "మెంతులు (Mentulu)"
+      },
+      "uses": [
+        "Controls diabetes",
+        "Increases breast milk production",
+        "Reduces cholesterol",
+        "Aids weight loss",
+        "Improves digestion",
+        "Reduces inflammation"
+      ],
+      "preparation": "Seeds, powder, or tea",
+      "dosage": "2-5 grams seeds daily",
+      "precautions": "May cause uterine contractions, avoid during pregnancy"
+    },
+    {
+      "id": 16,
+      "name": "Coriander",
+      "scientific_name": "Coriandrum sativum",
+      "local_names": {
+        "tamil": "கொத்தமல்லி (Kothamalli)",
+        "hindi": "धनिया (Dhaniya)",
+        "telugu": "కొత్తిమీర (Kottimeera)"
+      },
+      "uses": [
+        "Aids digestion",
+        "Reduces cholesterol",
+        "Anti-inflammatory properties",
+        "Detoxifies body",
+        "Regulates blood sugar",
+        "Improves skin health"
+      ],
+      "preparation": "Fresh leaves, seeds, or powder",
+      "dosage": "Fresh leaves or 3-6 grams seeds daily",
+      "precautions": "Generally safe, allergies rare"
+    },
+    {
+      "id": 17,
+      "name": "Eucalyptus",
+      "scientific_name": "Eucalyptus globulus",
+      "local_names": {
+        "tamil": "யூகலிப்டஸ் (Eucalyptus)",
+        "hindi": "नीलगिरी (Neelgiri)",
+        "telugu": "యూకలిప్టస్ (Eucalyptus)"
+      },
+      "uses": [
+        "Relieves respiratory problems",
+        "Treats coughs and colds",
+        "Antiseptic properties",
+        "Reduces fever",
+        "Relieves muscle pain",
+        "Treats sinusitis"
+      ],
+      "preparation": "Oil, tea, or steam inhalation",
+      "dosage": "Few drops of oil for inhalation",
+      "precautions": "Toxic if ingested in large amounts, use externally"
+    },
+    {
+      "id": 18,
+      "name": "Hibiscus",
+      "scientific_name": "Hibiscus rosa-sinensis",
+      "local_names": {
+        "tamil": "செம்பருத்தி (Sembaruthi)",
+        "hindi": "गुड़हल (Gudhal)",
+        "telugu": "మందార (Mandara)"
+      },
+      "uses": [
+        "Promotes hair growth",
+        "Lowers blood pressure",
+        "Controls cholesterol",
+        "Rich in antioxidants",
+        "Improves liver health",
+        "Aids weight loss"
+      ],
+      "preparation": "Flower tea, powder, or hair oil",
+      "dosage": "Hibiscus tea 2-3 times daily",
+      "precautions": "May lower blood pressure excessively"
+    },
+    {
+      "id": 19,
+      "name": "Lemongrass",
+      "scientific_name": "Cymbopogon citratus",
+      "local_names": {
+        "tamil": "எலுமிச்சை புல் (Elumichai Pul)",
+        "hindi": "नींबू घास (Nimbu Ghas)",
+        "telugu": "నిమ్మ గడ్డి (Nimma Gaddi)"
+      },
+      "uses": [
+        "Aids digestion",
+        "Reduces anxiety",
+        "Relieves headaches",
+        "Antibacterial properties",
+        "Reduces cholesterol",
+        "Detoxifies body"
+      ],
+      "preparation": "Tea, essential oil, or fresh leaves",
+      "dosage": "Lemongrass tea 1-2 times daily",
+      "precautions": "Generally safe, avoid during pregnancy in large amounts"
+    },
+    {
+      "id": 20,
+      "name": "Nochi",
+      "scientific_name": "Vitex negundo",
+      "local_names": {
+        "tamil": "நொச்சி (Nochi)",
+        "hindi": "निर्गुण्डी (Nirgundi)",
+        "telugu": "వావిలి (Vavili)"
+      },
+      "uses": [
+        "Relieves pain and inflammation",
+        "Treats arthritis",
+        "Reduces fever",
+        "Treats skin diseases",
+        "Improves respiratory health",
+        "Reduces swelling"
+      ],
+      "preparation": "Leaf paste, oil, or decoction",
+      "dosage": "5-10 ml juice or paste externally",
+      "precautions": "Avoid during pregnancy"
+    },
+    {
+      "id": 21,
+      "name": "Amla (Indian Gooseberry)",
+      "scientific_name": "Phyllanthus emblica",
+      "local_names": {
+        "tamil": "நெல்லிக்காய் (Nellikkai)",
+        "hindi": "आंवला (Amla)",
+        "telugu": "ఉసిరికాయ (Usirikaya)"
+      },
+      "uses": [
+        "Rich in Vitamin C, boosts immunity",
+        "Improves hair health and prevents graying",
+        "Aids digestion and relieves constipation",
+        "Controls diabetes",
+        "Improves eyesight",
+        "Purifies blood"
+      ],
+      "preparation": "Fresh fruit, juice, powder, or pickle",
+      "dosage": "1-2 fruits daily or 3-6 grams powder",
+      "precautions": "May increase bleeding risk in high doses"
+    },
+    {
+      "id": 22,
+      "name": "Tulsi Seeds (Sabja)",
+      "scientific_name": "Ocimum basilicum",
+      "local_names": {
+        "tamil": "துளசி விதை (Tulasi Vithai)",
+        "hindi": "तुलसी के बीज (Tulsi ke Beej)",
+        "telugu": "తులసి గింజలు (Tulasi Ginjalu)"
+      },
+      "uses": [
+        "Aids weight loss",
+        "Cools body temperature",
+        "Relieves constipation",
+        "Controls blood sugar",
+        "Reduces stress",
+        "Improves skin health"
+      ],
+      "preparation": "Soaked seeds in water or drinks",
+      "dosage": "1 tablespoon soaked seeds daily",
+      "precautions": "Children should avoid due to choking risk"
+    },
+    {
+      "id": 23,
+      "name": "Giloy (Guduchi)",
+      "scientific_name": "Tinospora cordifolia",
+      "local_names": {
+        "tamil": "சீந்தில் (Seenthil)",
+        "hindi": "गिलोय (Giloy)",
+        "telugu": "తిప్పతీగ (Tippatiga)"
+      },
+      "uses": [
+        "Boosts immunity",
+        "Treats chronic fever",
+        "Improves digestion",
+        "Reduces stress and anxiety",
+        "Treats respiratory disorders",
+        "Purifies blood"
+      ],
+      "preparation": "Stem juice, powder, or decoction",
+      "dosage": "2-3 grams powder daily",
+      "precautions": "May lower blood sugar, monitor levels"
+    },
+    {
+      "id": 24,
+      "name": "Arjuna",
+      "scientific_name": "Terminalia arjuna",
+      "local_names": {
+        "tamil": "மருதமரம் (Marudamaram)",
+        "hindi": "अर्जुन (Arjun)",
+        "telugu": "తెల్ల మద్ది (Tella Maddi)"
+      },
+      "uses": [
+        "Improves heart health",
+        "Reduces cholesterol",
+        "Lowers blood pressure",
+        "Treats angina",
+        "Strengthens cardiac muscles",
+        "Antioxidant properties"
+      ],
+      "preparation": "Bark powder or decoction",
+      "dosage": "3-6 grams powder daily",
+      "precautions": "Consult doctor if on heart medications"
+    },
+    {
+      "id": 25,
+      "name": "Shankhpushpi",
+      "scientific_name": "Convolvulus pluricaulis",
+      "local_names": {
+        "tamil": "சங்குப்பூ (Sankhuppu)",
+        "hindi": "शंखपुष्पी (Shankhpushpi)",
+        "telugu": "శంఖపుష్పి (Shankhapushpi)"
+      },
+      "uses": [
+        "Improves memory and concentration",
+        "Reduces stress and anxiety",
+        "Treats insomnia",
+        "Lowers blood pressure",
+        "Enhances brain function",
+        "Treats epilepsy"
+      ],
+      "preparation": "Whole plant powder or decoction",
+      "dosage": "3-6 grams powder daily",
+      "precautions": "May cause drowsiness"
+    },
+    {
+      "id": 26,
+      "name": "Shatavari",
+      "scientific_name": "Asparagus racemosus",
+      "local_names": {
+        "tamil": "சதாவரி (Sathavari)",
+        "hindi": "शतावरी (Shatavari)",
+        "telugu": "పిల్లిపెసర (Pillipesara)"
+      },
+      "uses": [
+        "Improves female reproductive health",
+        "Increases breast milk production",
+        "Reduces menopausal symptoms",
+        "Boosts immunity",
+        "Aids digestion",
+        "Anti-aging properties"
+      ],
+      "preparation": "Root powder, milk decoction, or capsules",
+      "dosage": "3-6 grams powder daily",
+      "precautions": "May cause allergic reactions in some"
+    },
+    {
+      "id": 27,
+      "name": "Triphala (Combined)",
+      "scientific_name": "Terminalia chebula, Terminalia bellirica, Emblica officinalis",
+      "local_names": {
+        "tamil": "திரிபலா (Triphala)",
+        "hindi": "त्रिफला (Triphala)",
+        "telugu": "త్రిఫల (Triphala)"
+      },
+      "uses": [
+        "Improves digestion and relieves constipation",
+        "Detoxifies body",
+        "Boosts immunity",
+        "Improves eyesight",
+        "Anti-aging properties",
+        "Weight management"
+      ],
+      "preparation": "Powder with warm water or honey",
+      "dosage": "3-6 grams powder before bed",
+      "precautions": "May cause diarrhea initially"
+    },
+    {
+      "id": 28,
+      "name": "Karela (Bitter Gourd)",
+      "scientific_name": "Momordica charantia",
+      "local_names": {
+        "tamil": "பாகல் (Pagal)",
+        "hindi": "करेला (Karela)",
+        "telugu": "కాకరకాయ (Kakarakaya)"
+      },
+      "uses": [
+        "Controls diabetes effectively",
+        "Purifies blood",
+        "Aids weight loss",
+        "Improves digestion",
+        "Boosts immunity",
+        "Treats skin problems"
+      ],
+      "preparation": "Juice, cooked vegetable, or powder",
+      "dosage": "30-50 ml juice daily",
+      "precautions": "Very bitter, may lower blood sugar excessively"
+    },
+    {
+      "id": 29,
+      "name": "Ajwain (Carom Seeds)",
+      "scientific_name": "Trachyspermum ammi",
+      "local_names": {
+        "tamil": "ஓமம் (Omam)",
+        "hindi": "अजवाइन (Ajwain)",
+        "telugu": "వాము (Vamu)"
+      },
+      "uses": [
+        "Aids digestion and relieves gas",
+        "Treats acidity",
+        "Relieves cough and cold",
+        "Reduces bloating",
+        "Treats asthma",
+        "Anti-inflammatory properties"
+      ],
+      "preparation": "Seeds, powder, or water infusion",
+      "dosage": "1 teaspoon seeds after meals",
+      "precautions": "Avoid during pregnancy in large amounts"
+    },
+    {
+      "id": 30,
+      "name": "Methi Dana (Fenugreek Seeds)",
+      "scientific_name": "Trigonella foenum-graecum",
+      "local_names": {
+        "tamil": "வெந்தயம் (Vendhayam)",
+        "hindi": "मेथी दाना (Methi Dana)",
+        "telugu": "మెంతుల (Mentula)"
+      },
+      "uses": [
+        "Controls diabetes and cholesterol",
+        "Increases lactation in nursing mothers",
+        "Aids weight loss",
+        "Reduces inflammation",
+        "Improves digestion",
+        "Treats hair loss"
+      ],
+      "preparation": "Soaked seeds, powder, or tea",
+      "dosage": "1 teaspoon soaked seeds daily",
+      "precautions": "May cause uterine contractions"
+    },
+    {
+      "id": 31,
+      "name": "Mulethi (Licorice)",
+      "scientific_name": "Glycyrrhiza glabra",
+      "local_names": {
+        "tamil": "அதிமதுரம் (Athimathuram)",
+        "hindi": "मुलेठी (Mulethi)",
+        "telugu": "అతిమధురం (Atimadhuram)"
+      },
+      "uses": [
+        "Treats cough and sore throat",
+        "Reduces acidity and ulcers",
+        "Improves skin complexion",
+        "Reduces stress",
+        "Boosts immunity",
+        "Treats respiratory disorders"
+      ],
+      "preparation": "Powder, tea, or chewing stick",
+      "dosage": "1-2 grams powder daily",
+      "precautions": "Avoid long-term use, may increase blood pressure"
+    },
+    {
+      "id": 32,
+      "name": "Bhringraj",
+      "scientific_name": "Eclipta alba",
+      "local_names": {
+        "tamil": "கைக்கேசி (Kaikkesi)",
+        "hindi": "भृंगराज (Bhringraj)",
+        "telugu": "గుంటగలగర (Guntagalagara)"
+      },
+      "uses": [
+        "Promotes hair growth and prevents graying",
+        "Improves liver health",
+        "Treats skin diseases",
+        "Improves eyesight",
+        "Reduces stress",
+        "Anti-aging properties"
+      ],
+      "preparation": "Powder, oil, or juice",
+      "dosage": "3-6 grams powder or oil application",
+      "precautions": "Generally safe, avoid during pregnancy"
+    },
+    {
+      "id": 33,
+      "name": "Haritaki",
+      "scientific_name": "Terminalia chebula",
+      "local_names": {
+        "tamil": "கடுக்காய் (Kadukkai)",
+        "hindi": "हरीतकी (Haritaki)",
+        "telugu": "కరక్కాయ (Karakkaya)"
+      },
+      "uses": [
+        "Improves digestion and relieves constipation",
+        "Detoxifies body",
+        "Boosts immunity",
+        "Improves cognitive function",
+        "Treats respiratory disorders",
+        "Anti-aging properties"
+      ],
+      "preparation": "Powder with warm water or honey",
+      "dosage": "3-6 grams powder daily",
+      "precautions": "May cause diarrhea in high doses"
+    },
+    {
+      "id": 34,
+      "name": "Bibhitaki",
+      "scientific_name": "Terminalia bellirica",
+      "local_names": {
+        "tamil": "தான்றிக்காய் (Thandrikai)",
+        "hindi": "बहेड़ा (Baheda)",
+        "telugu": "తాండ్రికాయ (Tandrikaya)"
+      },
+      "uses": [
+        "Treats respiratory problems",
+        "Improves digestion",
+        "Reduces cholesterol",
+        "Detoxifies body",
+        "Treats diabetes",
+        "Anti-inflammatory properties"
+      ],
+      "preparation": "Powder or decoction",
+      "dosage": "3-6 grams powder daily",
+      "precautions": "May cause digestive upset initially"
+    },
+    {
+      "id": 35,
+      "name": "Punarnava",
+      "scientific_name": "Boerhavia diffusa",
+      "local_names": {
+        "tamil": "முக்கரட்டைக்கீரை (Mukkarattai Keerai)",
+        "hindi": "पुनर्नवा (Punarnava)",
+        "telugu": "అట్టలూరి (Attaluri)"
+      },
+      "uses": [
+        "Treats kidney disorders",
+        "Reduces edema and swelling",
+        "Improves liver function",
+        "Detoxifies body",
+        "Reduces obesity",
+        "Treats urinary problems"
+      ],
+      "preparation": "Whole plant powder or juice",
+      "dosage": "3-6 grams powder daily",
+      "precautions": "Consult doctor if on diuretics"
+    },
+    {
+      "id": 36,
+      "name": "Vacha (Sweet Flag)",
+      "scientific_name": "Acorus calamus",
+      "local_names": {
+        "tamil": "வசம்பு (Vasambu)",
+        "hindi": "वच (Vacha)",
+        "telugu": "వస (Vasa)"
+      },
+      "uses": [
+        "Improves memory and speech",
+        "Treats digestive disorders",
+        "Reduces cough and cold",
+        "Improves appetite",
+        "Treats epilepsy",
+        "Antimicrobial properties"
+      ],
+      "preparation": "Root powder or oil",
+      "dosage": "0.5-1 gram powder daily",
+      "precautions": "Use in small amounts, toxic in large doses"
+    },
+    {
+      "id": 37,
+      "name": "Gudmar",
+      "scientific_name": "Gymnema sylvestre",
+      "local_names": {
+        "tamil": "சிறுகுறிஞான் (Sirukurinjan)",
+        "hindi": "गुड़मार (Gudmar)",
+        "telugu": "పొదపత్రి (Podapatri)"
+      },
+      "uses": [
+        "Controls diabetes by reducing sugar absorption",
+        "Reduces sugar cravings",
+        "Aids weight loss",
+        "Lowers cholesterol",
+        "Improves digestion",
+        "Anti-inflammatory properties"
+      ],
+      "preparation": "Leaf powder or tea",
+      "dosage": "3-6 grams powder daily",
+      "precautions": "May lower blood sugar excessively"
+    },
+    {
+      "id": 38,
+      "name": "Kaunch Beej (Velvet Bean)",
+      "scientific_name": "Mucuna pruriens",
+      "local_names": {
+        "tamil": "பூனைக்காலி (Poonaikali)",
+        "hindi": "कौंच बीज (Kaunch Beej)",
+        "telugu": "దూకుడుకాయ (Dukudukaya)"
+      },
+      "uses": [
+        "Improves male fertility and testosterone",
+        "Treats Parkinson's disease",
+        "Boosts mood and reduces stress",
+        "Enhances muscle strength",
+        "Improves sexual health",
+        "Neuroprotective properties"
+      ],
+      "preparation": "Seed powder with milk",
+      "dosage": "3-5 grams powder daily",
+      "precautions": "Consult doctor if on Parkinson's medication"
+    },
+    {
+      "id": 39,
+      "name": "Safed Musli",
+      "scientific_name": "Chlorophytum borivilianum",
+      "local_names": {
+        "tamil": "நிலப்பனைக்கிழங்கு (Nilapanai Kizhangu)",
+        "hindi": "सफेद मूसली (Safed Musli)",
+        "telugu": "తెల్ల ముసలి (Tella Musali)"
+      },
+      "uses": [
+        "Improves strength and stamina",
+        "Enhances male fertility",
+        "Boosts immunity",
+        "Treats diabetes",
+        "Anti-aging properties",
+        "Improves lactation"
+      ],
+      "preparation": "Root powder with milk",
+      "dosage": "3-6 grams powder daily",
+      "precautions": "Generally safe, avoid during pregnancy"
+    },
+    {
+      "id": 40,
+      "name": "Vidarikand",
+      "scientific_name": "Pueraria tuberosa",
+      "local_names": {
+        "tamil": "நீலா மூலி (Neela Mooli)",
+        "hindi": "विदारीकन्द (Vidarikand)",
+        "telugu": "నేల గుమ్మడి (Nela Gummadi)"
+      },
+      "uses": [
+        "Improves strength and vitality",
+        "Enhances lactation",
+        "Treats digestive disorders",
+        "Anti-aging properties",
+        "Boosts immunity",
+        "Improves memory"
+      ],
+      "preparation": "Tuber powder with milk",
+      "dosage": "3-6 grams powder daily",
+      "precautions": "Generally safe in recommended doses"
+    },
+    {
+      "id": 41,
+      "name": "Jatamansi",
+      "scientific_name": "Nardostachys jatamansi",
+      "local_names": {
+        "tamil": "ஜடாமாஞ்சி (Jatamanjhi)",
+        "hindi": "जटामांसी (Jatamansi)",
+        "telugu": "జటామాంసి (Jatamansi)"
+      },
+      "uses": [
+        "Reduces stress and anxiety",
+        "Treats insomnia",
+        "Improves memory",
+        "Reduces blood pressure",
+        "Treats epilepsy",
+        "Promotes hair growth"
+      ],
+      "preparation": "Root powder or oil",
+      "dosage": "1-3 grams powder daily",
+      "precautions": "May cause drowsiness"
+    },
+    {
+      "id": 42,
+      "name": "Kutki",
+      "scientific_name": "Picrorhiza kurroa",
+      "local_names": {
+        "tamil": "கடுகுரோகணி (Kadugurohini)",
+        "hindi": "कुटकी (Kutki)",
+        "telugu": "కుట్కి (Kutki)"
+      },
+      "uses": [
+        "Improves liver health",
+        "Treats jaundice",
+        "Boosts immunity",
+        "Reduces fever",
+        "Treats skin diseases",
+        "Anti-inflammatory properties"
+      ],
+      "preparation": "Root powder",
+      "dosage": "1-2 grams powder daily",
+      "precautions": "Use under medical supervision"
+    },
+    {
+      "id": 43,
+      "name": "Chirata (Swertia)",
+      "scientific_name": "Swertia chirayita",
+      "local_names": {
+        "tamil": "நிலவேம்பு (Nilavembu)",
+        "hindi": "चिरायता (Chirata)",
+        "telugu": "నీలవేము (Neelavemu)"
+      },
+      "uses": [
+        "Treats chronic fever",
+        "Improves digestion",
+        "Purifies blood",
+        "Reduces malaria symptoms",
+        "Treats liver disorders",
+        "Controls diabetes"
+      ],
+      "preparation": "Whole plant powder or decoction",
+      "dosage": "1-3 grams powder daily",
+      "precautions": "Very bitter, may cause nausea"
+    },
+    {
+      "id": 44,
+      "name": "Katuki",
+      "scientific_name": "Picrorhiza kurroa",
+      "local_names": {
+        "tamil": "கடுகுரோகணி (Kadugurohini)",
+        "hindi": "कटुकी (Katuki)",
+        "telugu": "కటుక (Katuka)"
+      },
+      "uses": [
+        "Treats liver disorders",
+        "Reduces fever",
+        "Improves digestion",
+        "Treats skin diseases",
+        "Boosts immunity",
+        "Anti-inflammatory"
+      ],
+      "preparation": "Root powder",
+      "dosage": "1-2 grams powder daily",
+      "precautions": "Consult ayurvedic practitioner"
+    },
+    {
+      "id": 45,
+      "name": "Bakuchi",
+      "scientific_name": "Psoralea corylifolia",
+      "local_names": {
+        "tamil": "கார்போகரிசி (Karpookarisi)",
+        "hindi": "बाकुची (Bakuchi)",
+        "telugu": "బావంచాలు (Bavanchalu)"
+      },
+      "uses": [
+        "Treats skin diseases like vitiligo",
+        "Improves hair growth",
+        "Treats eczema and psoriasis",
+        "Anti-aging properties",
+        "Improves bone health",
+        "Antibacterial properties"
+      ],
+      "preparation": "Seed powder or oil",
+      "dosage": "1-3 grams powder daily",
+      "precautions": "May cause photosensitivity"
+    },
+    {
+      "id": 46,
+      "name": "Daruharidra",
+      "scientific_name": "Berberis aristata",
+      "local_names": {
+        "tamil": "மரமஞ்சள் (Maramanjal)",
+        "hindi": "दारुहल्दी (Daruharidra)",
+        "telugu": "దారు హరిద్ర (Daru Haridra)"
+      },
+      "uses": [
+        "Treats skin diseases",
+        "Improves eye health",
+        "Antibacterial properties",
+        "Reduces fever",
+        "Treats jaundice",
+        "Improves liver function"
+      ],
+      "preparation": "Stem/root powder or decoction",
+      "dosage": "1-3 grams powder daily",
+      "precautions": "May interact with antibiotics"
+    },
+    {
+      "id": 47,
+      "name": "Vidanga",
+      "scientific_name": "Embelia ribes",
+      "local_names": {
+        "tamil": "வாய்விளங்கம் (Vayvilangam)",
+        "hindi": "विडंग (Vidanga)",
+        "telugu": "వాయువిడంగ (Vayuvidanga)"
+      },
+      "uses": [
+        "Treats intestinal worms",
+        "Aids weight loss",
+        "Improves digestion",
+        "Treats skin diseases",
+        "Reduces bloating",
+        "Antimicrobial properties"
+      ],
+      "preparation": "Seed powder",
+      "dosage": "1-3 grams powder daily",
+      "precautions": "Use under supervision"
+    },
+    {
+      "id": 48,
+      "name": "Pippali (Long Pepper)",
+      "scientific_name": "Piper longum",
+      "local_names": {
+        "tamil": "திப்பிலி (Thippili)",
+        "hindi": "पिप्पली (Pippali)",
+        "telugu": "పిప్పలి (Pippali)"
+      },
+      "uses": [
+        "Treats respiratory disorders",
+        "Improves digestion",
+        "Boosts immunity",
+        "Reduces cough and cold",
+        "Treats asthma",
+        "Enhances metabolism"
+      ],
+      "preparation": "Fruit powder with honey",
+      "dosage": "1-2 grams powder daily",
+      "precautions": "May cause heat sensation"
+    },
+    {
+      "id": 49,
+      "name": "Maricha (Black Pepper)",
+      "scientific_name": "Piper nigrum",
+      "local_names": {
+        "tamil": "மிளகு (Milagu)",
+        "hindi": "काली मिर्च (Kali Mirch)",
+        "telugu": "మిర్యాలు (Miryalu)"
+      },
+      "uses": [
+        "Improves digestion",
+        "Treats cold and cough",
+        "Enhances nutrient absorption",
+        "Aids weight loss",
+        "Antioxidant properties",
+        "Improves cognitive function"
+      ],
+      "preparation": "Powder with honey or milk",
+      "dosage": "1-2 grams daily",
+      "precautions": "May cause gastric irritation in excess"
+    },
+    {
+      "id": 50,
+      "name": "Shunthi (Dried Ginger)",
+      "scientific_name": "Zingiber officinale",
+      "local_names": {
+        "tamil": "சுக்கு (Sukku)",
+        "hindi": "सौंठ (Sonth)",
+        "telugu": "శుంఠి (Shunthi)"
+      },
+      "uses": [
+        "Treats nausea and vomiting",
+        "Improves digestion",
+        "Reduces inflammation",
+        "Relieves arthritis pain",
+        "Treats respiratory problems",
+        "Boosts immunity"
+      ],
+      "preparation": "Powder with warm water or honey",
+      "dosage": "1-3 grams powder daily",
+      "precautions": "May increase heat in body"
+    },
+    {
+      "id": 51,
+      "name": "Nirgundi",
+      "scientific_name": "Vitex negundo",
+      "local_names": {
+        "tamil": "நொச்சி (Nochi)",
+        "hindi": "निर्गुण्डी (Nirgundi)",
+        "telugu": "వావిలి (Vavili)"
+      },
+      "uses": [
+        "Treats arthritis and joint pain",
+        "Reduces inflammation",
+        "Treats fever",
+        "Relieves headache",
+        "Treats skin diseases",
+        "Improves respiratory health"
+      ],
+      "preparation": "Leaf paste, oil, or decoction",
+      "dosage": "5-10 ml juice or external application",
+      "precautions": "Avoid during pregnancy"
+    },
+    {
+      "id": 52,
+      "name": "Kalmegh (Green Chiretta)",
+      "scientific_name": "Andrographis paniculata",
+      "local_names": {
+        "tamil": "நிலவேம்பு (Nilavembu)",
+        "hindi": "कालमेघ (Kalmegh)",
+        "telugu": "నీలవేము (Neelavemu)"
+      },
+      "uses": [
+        "Boosts immunity",
+        "Treats fever and flu",
+        "Improves liver health",
+        "Antibacterial properties",
+        "Treats digestive disorders",
+        "Reduces inflammation"
+      ],
+      "preparation": "Whole plant powder or decoction",
+      "dosage": "1-3 grams powder daily",
+      "precautions": "Very bitter, may cause nausea"
+    },
+    {
+      "id": 53,
+      "name": "Bala",
+      "scientific_name": "Sida cordifolia",
+      "local_names": {
+        "tamil": "குறுந்தொட்டி (Kuruntotti)",
+        "hindi": "बला (Bala)",
+        "telugu": "బలా (Bala)"
+      },
+      "uses": [
+        "Improves strength and stamina",
+        "Treats respiratory disorders",
+        "Reduces inflammation",
+        "Improves heart health",
+        "Treats nervous disorders",
+        "Enhances immunity"
+      ],
+      "preparation": "Root powder or decoction",
+      "dosage": "3-6 grams powder daily",
+      "precautions": "Generally safe in recommended doses"
+    },
+    {
+      "id": 54,
+      "name": "Gokshura",
+      "scientific_name": "Tribulus terrestris",
+      "local_names": {
+        "tamil": "நெருஞ்சில் (Nerunjil)",
+        "hindi": "गोक्षुर (Gokshura)",
+        "telugu": "పల్లేరు (Palleru)"
+      },
+      "uses": [
+        "Improves kidney and urinary health",
+        "Enhances male fertility",
+        "Treats urinary tract infections",
+        "Reduces kidney stones",
+        "Improves strength",
+        "Diuretic properties"
+      ],
+      "preparation": "Fruit powder or decoction",
+      "dosage": "3-6 grams powder daily",
+      "precautions": "Consult doctor if on diuretics"
+    },
+    {
+      "id": 55,
+      "name": "Pushkarmool",
+      "scientific_name": "Inula racemosa",
+      "local_names": {
+        "tamil": "புஷ்கரமூலம் (Pushkaramoolam)",
+        "hindi": "पुष्करमूल (Pushkarmool)",
+        "telugu": "పుష్కరమూలము (Pushkaramoolamu)"
+      },
+      "uses": [
+        "Treats respiratory disorders",
+        "Improves heart health",
+        "Reduces cough and asthma",
+        "Anti-inflammatory properties",
+        "Improves digestion",
+        "Boosts immunity"
+      ],
+      "preparation": "Root powder or decoction",
+      "dosage": "1-3 grams powder daily",
+      "precautions": "Use under supervision"
+    },
+    {
+      "id": 56,
+      "name": "Manjistha",
+      "scientific_name": "Rubia cordifolia",
+      "local_names": {
+        "tamil": "மஞ்சிட்டி (Manjitti)",
+        "hindi": "मंजिष्ठा (Manjistha)",
+        "telugu": "మంజిష్ఠ (Manjishtha)"
+      },
+      "uses": [
+        "Purifies blood",
+        "Treats skin diseases",
+        "Improves complexion",
+        "Treats acne and pigmentation",
+        "Anti-inflammatory properties",
+        "Treats urinary disorders"
+      ],
+      "preparation": "Root powder or decoction",
+      "dosage": "1-3 grams powder daily",
+      "precautions": "May cause reddish discoloration of urine"
+    },
+    {
+      "id": 57,
+      "name": "Lodhra",
+      "scientific_name": "Symplocos racemosa",
+      "local_names": {
+        "tamil": "வெள்ளைக்காரை (Vellaikkarai)",
+        "hindi": "लोध्र (Lodhra)",
+        "telugu": "లోద్ధ్ర (Loddhra)"
+      },
+      "uses": [
+        "Treats menstrual disorders",
+        "Improves skin complexion",
+        "Treats leucorrhea",
+        "Reduces inflammation",
+        "Treats diarrhea",
+        "Improves eye health"
+      ],
+      "preparation": "Bark powder or decoction",
+      "dosage": "1-3 grams powder daily",
+      "precautions": "Generally safe for women"
+    },
+    {
+      "id": 58,
+      "name": "Ashoka",
+      "scientific_name": "Saraca asoca",
+      "local_names": {
+        "tamil": "அசோகமரம் (Asokamaram)",
+        "hindi": "अशोक (Ashoka)",
+        "telugu": "అశోకము (Ashokamu)"
+      },
+      "uses": [
+        "Treats menstrual disorders",
+        "Reduces menstrual pain",
+        "Treats uterine disorders",
+        "Improves fertility",
+        "Treats leucorrhea",
+        "Anti-inflammatory properties"
+      ],
+      "preparation": "Bark powder or decoction",
+      "dosage": "3-6 grams powder daily",
+      "precautions": "Consult doctor during pregnancy"
+    },
+    {
+      "id": 59,
+      "name": "Nagkesar",
+      "scientific_name": "Mesua ferrea",
+      "local_names": {
+        "tamil": "நாகசம்பகம் (Nagasambagam)",
+        "hindi": "नागकेसर (Nagkesar)",
+        "telugu": "నాగకేసరము (Nagakesaramu)"
+      },
+      "uses": [
+        "Treats skin diseases",
+        "Improves digestion",
+        "Treats bleeding disorders",
+        "Reduces fever",
+        "Treats respiratory problems",
+        "Antimicrobial properties"
+      ],
+      "preparation": "Flower powder or oil",
+      "dosage": "1-2 grams powder daily",
+      "precautions": "Use in recommended doses"
+    },
+    {
+      "id": 60,
+      "name": "Kesar (Saffron)",
+      "scientific_name": "Crocus sativus",
+      "local_names": {
+        "tamil": "குங்குமப்பூ (Kungumapoo)",
+        "hindi": "केसर (Kesar)",
+        "telugu": "కుంకుమపువ్వు (Kunkumapuvvu)"
+      },
+      "uses": [
+        "Improves skin complexion",
+        "Enhances mood and reduces depression",
+        "Improves memory",
+        "Treats asthma",
+        "Improves eyesight",
+        "Antioxidant properties"
+      ],
+      "preparation": "Strands soaked in milk or water",
+      "dosage": "Few strands (50-100 mg) daily",
+      "precautions": "Expensive, use sparingly, avoid during pregnancy in large amounts"
+    },
+    {
+      "id": 61,
+      "name": "Haldi (Turmeric)",
+      "scientific_name": "Curcuma longa",
+      "local_names": {
+        "tamil": "மஞ்சள் (Manjal)",
+        "hindi": "हल्दी (Haldi)",
+        "telugu": "పసుపు (Pasupu)"
+      },
+      "uses": [
+        "Anti-inflammatory and antioxidant",
+        "Heals wounds",
+        "Treats skin conditions",
+        "Boosts immunity",
+        "Improves digestion",
+        "Reduces arthritis pain"
+      ],
+      "preparation": "Powder, paste, or milk",
+      "dosage": "1/2-1 teaspoon powder daily",
+      "precautions": "May interfere with blood thinners"
+    },
+    {
+      "id": 62,
+      "name": "Tejpatta (Bay Leaf)",
+      "scientific_name": "Cinnamomum tamala",
+      "local_names": {
+        "tamil": "பிரியங்கு இலை (Priyangu Ilai)",
+        "hindi": "तेजपत्ता (Tejpatta)",
+        "telugu": "తమల పత్రం (Tamala Patram)"
+      },
+      "uses": [
+        "Aids digestion",
+        "Controls diabetes",
+        "Reduces cholesterol",
+        "Treats respiratory problems",
+        "Relieves stress",
+        "Anti-inflammatory properties"
+      ],
+      "preparation": "Leaves in cooking, tea, or powder",
+      "dosage": "1-2 leaves in food or tea",
+      "precautions": "Generally safe as spice"
+    },
+    {
+      "id": 63,
+      "name": "Lavang (Clove)",
+      "scientific_name": "Syzygium aromaticum",
+      "local_names": {
+        "tamil": "கிராம்பு (Kirambu)",
+        "hindi": "लौंग (Laung)",
+        "telugu": "లవంగం (Lavangam)"
+      },
+      "uses": [
+        "Treats toothache and oral infections",
+        "Aids digestion",
+        "Relieves cough and cold",
+        "Antibacterial properties",
+        "Reduces inflammation",
+        "Improves respiratory health"
+      ],
+      "preparation": "Whole cloves, powder, or oil",
+      "dosage": "2-3 cloves daily or clove oil topically",
+      "precautions": "Clove oil is very strong, dilute before use"
+    },
+    {
+      "id": 64,
+      "name": "Elaichi (Cardamom)",
+      "scientific_name": "Elettaria cardamomum",
+      "local_names": {
+        "tamil": "ஏலக்காய் (Elakkai)",
+        "hindi": "इलायची (Elaichi)",
+        "telugu": "ఏలకులు (Elakulu)"
+      },
+      "uses": [
+        "Aids digestion and freshens breath",
+        "Treats respiratory problems",
+        "Reduces blood pressure",
+        "Diuretic properties",
+        "Improves oral health",
+        "Antioxidant properties"
+      ],
+      "preparation": "Pods, seeds, or powder",
+      "dosage": "2-3 pods daily in tea or food",
+      "precautions": "Generally safe as spice"
+    },
+    {
+      "id": 65,
+      "name": "Dalchini (Cinnamon)",
+      "scientific_name": "Cinnamomum verum",
+      "local_names": {
+        "tamil": "பட்டை (Pattai)",
+        "hindi": "दालचीनी (Dalchini)",
+        "telugu": "దాల్చిన చెక్క (Dalchina Chekka)"
+      },
+      "uses": [
+        "Controls diabetes",
+        "Reduces cholesterol",
+        "Anti-inflammatory properties",
+        "Improves heart health",
+        "Boosts immunity",
+        "Aids weight loss"
+      ],
+      "preparation": "Stick, powder, or tea",
+      "dosage": "1/2-1 teaspoon powder daily",
+      "precautions": "Avoid in large amounts during pregnancy"
+    },
+    {
+      "id": 66,
+      "name": "Jeera (Cumin)",
+      "scientific_name": "Cuminum cyminum",
+      "local_names": {
+        "tamil": "சீரகம் (Seeragam)",
+        "hindi": "जीरा (Jeera)",
+        "telugu": "జీలకర్ర (Jeelakarra)"
+      },
+      "uses": [
+        "Aids digestion",
+        "Boosts immunity",
+        "Controls diabetes",
+        "Improves respiratory health",
+        "Aids weight loss",
+        "Rich in iron"
+      ],
+      "preparation": "Seeds, powder, or jeera water",
+      "dosage": "1 teaspoon seeds or powder daily",
+      "precautions": "Generally safe as spice"
+    },
+    {
+      "id": 67,
+      "name": "Hing (Asafoetida)",
+      "scientific_name": "Ferula assa-foetida",
+      "local_names": {
+        "tamil": "பெருங்காயம் (Perungayam)",
+        "hindi": "हींग (Hing)",
+        "telugu": "ఇంగువ (Inguva)"
+      },
+      "uses": [
+        "Aids digestion and reduces gas",
+        "Treats bloating",
+        "Relieves asthma",
+        "Reduces blood pressure",
+        "Treats respiratory problems",
+        "Antimicrobial properties"
+      ],
+      "preparation": "Powder in cooking",
+      "dosage": "Pinch to 1/4 teaspoon in food",
+      "precautions": "Strong smell, use sparingly"
+    },
+    {
+      "id": 68,
+      "name": "Saunf (Fennel)",
+      "scientific_name": "Foeniculum vulgare",
+      "local_names": {
+        "tamil": "பெருஞ்சீரகம் (Perunjeeragam)",
+        "hindi": "सौंफ (Saunf)",
+        "telugu": "సోపు (Sopu)"
+      },
+      "uses": [
+        "Aids digestion and reduces bloating",
+        "Freshens breath",
+        "Improves eyesight",
+        "Increases breast milk production",
+        "Reduces menstrual cramps",
+        "Treats respiratory problems"
+      ],
+      "preparation": "Seeds, powder, or tea",
+      "dosage": "1 teaspoon seeds after meals",
+      "precautions": "Generally safe, avoid large amounts during pregnancy"
+    },
+    {
+      "id": 69,
+      "name": "Kalonji (Black Seed)",
+      "scientific_name": "Nigella sativa",
+      "local_names": {
+        "tamil": "கருஞ்சீரகம் (Karunjeeragam)",
+        "hindi": "कलौंजी (Kalonji)",
+        "telugu": "నల్ల జీలకర్ర (Nalla Jeelakarra)"
+      },
+      "uses": [
+        "Boosts immunity",
+        "Controls diabetes",
+        "Reduces cholesterol",
+        "Treats respiratory problems",
+        "Aids weight loss",
+        "Anti-inflammatory properties"
+      ],
+      "preparation": "Seeds, oil, or powder",
+      "dosage": "1 teaspoon seeds or oil daily",
+      "precautions": "May lower blood pressure, monitor levels"
+    },
+    {
+      "id": 70,
+      "name": "Sarso (Mustard)",
+      "scientific_name": "Brassica juncea",
+      "local_names": {
+        "tamil": "கடுகு (Kadugu)",
+        "hindi": "सरसों (Sarso)",
+        "telugu": "ఆవాలు (Avalu)"
+      },
+      "uses": [
+        "Aids digestion",
+        "Reduces inflammation",
+        "Treats respiratory problems",
+        "Improves heart health",
+        "Relieves muscle pain",
+        "Antibacterial properties"
+      ],
+      "preparation": "Seeds, oil, or paste",
+      "dosage": "1/2-1 teaspoon seeds daily",
+      "precautions": "May cause skin irritation if applied undiluted"
+    },
+    {
+      "id": 71,
+      "name": "Methi Patta (Fenugreek Leaves)",
+      "scientific_name": "Trigonella foenum-graecum",
+      "local_names": {
+        "tamil": "வெந்தயக்கீரை (Vendhaya Keerai)",
+        "hindi": "मेथी के पत्ते (Methi ke Patte)",
+        "telugu": "మెంతుల కూర (Mentula Koora)"
+      },
+      "uses": [
+        "Controls diabetes",
+        "Aids digestion",
+        "Reduces cholesterol",
+        "Improves hair health",
+        "Rich in iron",
+        "Boosts immunity"
+      ],
+      "preparation": "Fresh leaves as vegetable or dried powder",
+      "dosage": "Handful of fresh leaves or 1-2 teaspoons dried",
+      "precautions": "May have mild laxative effect"
+    },
+    {
+      "id": 72,
+      "name": "Palak (Spinach)",
+      "scientific_name": "Spinacia oleracea",
+      "local_names": {
+        "tamil": "பசலைக்கீரை (Pasalai Keerai)",
+        "hindi": "पालक (Palak)",
+        "telugu": "పాలకూర (Palakoora)"
+      },
+      "uses": [
+        "Rich in iron, treats anemia",
+        "Improves eyesight",
+        "Strengthens bones",
+        "Boosts immunity",
+        "Aids digestion",
+        "Improves skin health"
+      ],
+      "preparation": "Fresh leaves as vegetable or juice",
+      "dosage": "1 cup cooked spinach daily",
+      "precautions": "High in oxalates, limit if prone to kidney stones"
+    },
+    {
+      "id": 73,
+      "name": "Pudina (Mint)",
+      "scientific_name": "Mentha",
+      "local_names": {
+        "tamil": "புதினா (Pudina)",
+        "hindi": "पुदीना (Pudina)",
+        "telugu": "పుదీనా (Pudina)"
+      },
+      "uses": [
+        "Aids digestion",
+        "Relieves nausea and headaches",
+        "Freshens breath",
+        "Treats IBS",
+        "Reduces menstrual cramps",
+        "Improves respiratory health"
+      ],
+      "preparation": "Fresh leaves, tea, or chutney",
+      "dosage": "Mint tea 2-3 times daily",
+      "precautions": "Avoid excess if you have GERD"
+    },
+    {
+      "id": 74,
+      "name": "Dhaniya Patta (Cilantro)",
+      "scientific_name": "Coriandrum sativum",
+      "local_names": {
+        "tamil": "கொத்தமல்லி (Kothamalli)",
+        "hindi": "धनिया पत्ता (Dhaniya Patta)",
+        "telugu": "కొత్తిమీర (Kottimeera)"
+      },
+      "uses": [
+        "Aids digestion",
+        "Detoxifies body",
+        "Reduces cholesterol",
+        "Controls blood sugar",
+        "Improves skin health",
+        "Anti-inflammatory"
+      ],
+      "preparation": "Fresh leaves, juice, or chutney",
+      "dosage": "Fresh leaves daily in food",
+      "precautions": "Generally safe"
+    },
+    {
+      "id": 75,
+      "name": "Paan (Betel Leaf)",
+      "scientific_name": "Piper betle",
+      "local_names": {
+        "tamil": "வெற்றிலை (Vettrilai)",
+        "hindi": "पान (Paan)",
+        "telugu": "తామలపాకు (Tamalapaku)"
+      },
+      "uses": [
+        "Aids digestion",
+        "Freshens breath",
+        "Treats coughs",
+        "Antiseptic for wounds",
+        "Relieves headache",
+        "Boosts appetite"
+      ],
+      "preparation": "Fresh leaves",
+      "dosage": "1-2 leaves after meals",
+      "precautions": "Avoid excessive chewing"
+    },
+    {
+      "id": 76,
+      "name": "Kadi Patta (Curry Leaves)",
+      "scientific_name": "Murraya koenigii",
+      "local_names": {
+        "tamil": "கறிவேப்பிலை (Kariveppilai)",
+        "hindi": "कढ़ी पत्ता (Kadi Patta)",
+        "telugu": "కరివేపాకు (Karivepaku)"
+      },
+      "uses": [
+        "Controls diabetes",
+        "Promotes hair growth",
+        "Aids digestion",
+        "Improves eyesight",
+        "Antioxidant properties",
+        "Reduces cholesterol"
+      ],
+      "preparation": "Fresh leaves in cooking",
+      "dosage": "8-10 leaves daily",
+      "precautions": "Generally safe"
+    },
+    {
+      "id": 77,
+      "name": "Lal Mirch (Red Chili)",
+      "scientific_name": "Capsicum annuum",
+      "local_names": {
+        "tamil": "மிளகாய் (Milagay)",
+        "hindi": "लाल मिर्च (Lal Mirch)",
+        "telugu": "ఎర్ర మిర్చి (Erra Mirchi)"
+      },
+      "uses": [
+        "Boosts metabolism",
+        "Aids weight loss",
+        "Improves circulation",
+        "Pain relief (topical)",
+        "Rich in Vitamin C",
+        "Antimicrobial properties"
+      ],
+      "preparation": "Fresh or dried powder",
+      "dosage": "Use moderately in food",
+      "precautions": "May cause gastric irritation in excess"
+    },
+    {
+      "id": 78,
+      "name": "Hari Mirch (Green Chili)",
+      "scientific_name": "Capsicum annuum",
+      "local_names": {
+        "tamil": "பச்சை மிளகாய் (Pachai Milagay)",
+        "hindi": "हरी मिर्च (Hari Mirch)",
+        "telugu": "పచ్చి మిర్చి (Pacchi Mirchi)"
+      },
+      "uses": [
+        "Boosts immunity",
+        "Rich in Vitamin C",
+        "Aids digestion",
+        "Improves metabolism",
+        "Antibacterial properties",
+        "Improves skin health"
+      ],
+      "preparation": "Fresh chilies in cooking",
+      "dosage": "1-2 chilies daily in moderation",
+      "precautions": "May cause acidity if consumed in excess"
+    },
+    {
+      "id": 79,
+      "name": "Lahsun (Garlic)",
+      "scientific_name": "Allium sativum",
+      "local_names": {
+        "tamil": "வெள்ளைப்பூண்டு (Vellaippoondu)",
+        "hindi": "लहसुन (Lahsun)",
+        "telugu": "వెల్లుల్లి (Vellulli)"
+      },
+      "uses": [
+        "Reduces cholesterol and blood pressure",
+        "Boosts immunity",
+        "Antibacterial and antiviral",
+        "Improves heart health",
+        "Anti-inflammatory",
+        "Aids digestion"
+      ],
+      "preparation": "Raw, cooked, or in supplements",
+      "dosage": "1-2 cloves daily",
+      "precautions": "May cause bad breath, interact with blood thinners"
+    },
+    {
+      "id": 80,
+      "name": "Pyaz (Onion)",
+      "scientific_name": "Allium cepa",
+      "local_names": {
+        "tamil": "வெங்காயம் (Vengayam)",
+        "hindi": "प्याज (Pyaz)",
+        "telugu": "ఉల్లిపాయ (Ullipaya)"
+      },
+      "uses": [
+        "Reduces cholesterol",
+        "Improves heart health",
+        "Antibacterial properties",
+        "Controls blood sugar",
+        "Improves bone health",
+        "Anti-inflammatory"
+      ],
+      "preparation": "Raw, cooked, or juice",
+      "dosage": "1 medium onion daily",
+      "precautions": "May cause bad breath and gastric issues in some"
+    },
+    {
+      "id": 81,
+      "name": "Adrak (Ginger)",
+      "scientific_name": "Zingiber officinale",
+      "local_names": {
+        "tamil": "இஞ்சி (Inji)",
+        "hindi": "अदरक (Adrak)",
+        "telugu": "అల్లం (Allam)"
+      },
+      "uses": [
+        "Treats nausea and vomiting",
+        "Anti-inflammatory",
+        "Relieves pain",
+        "Improves digestion",
+        "Reduces muscle soreness",
+        "Lowers blood sugar"
+      ],
+      "preparation": "Fresh root, tea, or powder",
+      "dosage": "1-2 grams daily",
+      "precautions": "May increase bleeding risk"
+    },
+    {
+      "id": 82,
+      "name": "Hara Dhania (Green Coriander)",
+      "scientific_name": "Coriandrum sativum",
+      "local_names": {
+        "tamil": "கொத்தமல்லி (Kothamalli)",
+        "hindi": "हरा धनिया (Hara Dhaniya)",
+        "telugu": "కొత్తిమీర (Kottimeera)"
+      },
+      "uses": [
+        "Aids digestion",
+        "Detoxifies body",
+        "Reduces inflammation",
+        "Controls blood sugar",
+        "Improves skin",
+        "Rich in antioxidants"
+      ],
+      "preparation": "Fresh leaves in food or juice",
+      "dosage": "Fresh leaves daily",
+      "precautions": "Generally safe"
+    },
+    {
+      "id": 83,
+      "name": "Amrud Patta (Guava Leaf)",
+      "scientific_name": "Psidium guajava",
+      "local_names": {
+        "tamil": "கொய்யா இலை (Koiya Ilai)",
+        "hindi": "अमरूद के पत्ते (Amrud ke Patte)",
+        "telugu": "జామ ఆకులు (Jama Akulu)"
+      },
+      "uses": [
+        "Treats diarrhea",
+        "Controls diabetes",
+        "Oral health",
+        "Weight loss",
+        "Reduces menstrual pain",
+        "Heart health"
+      ],
+      "preparation": "Tea or decoction",
+      "dosage": "Guava leaf tea twice daily",
+      "precautions": "May cause constipation if overused"
+    },
+    {
+      "id": 84,
+      "name": "Jamun Patta (Java Plum Leaf)",
+      "scientific_name": "Syzygium cumini",
+      "local_names": {
+        "tamil": "நாவல் இலை (Naval Ilai)",
+        "hindi": "जामुन के पत्ते (Jamun ke Patte)",
+        "telugu": "నేరేడు ఆకులు (Neredu Akulu)"
+      },
+      "uses": [
+        "Controls diabetes",
+        "Improves oral health",
+        "Treats diarrhea",
+        "Purifies blood",
+        "Strengthens gums",
+        "Anti-inflammatory"
+      ],
+      "preparation": "Leaf powder or decoction",
+      "dosage": "1-2 teaspoons powder daily",
+      "precautions": "May lower blood sugar significantly"
+    },
+    {
+      "id": 85,
+      "name": "Bael Patta (Wood Apple Leaf)",
+      "scientific_name": "Aegle marmelos",
+      "local_names": {
+        "tamil": "வில்வ இலை (Vilva Ilai)",
+        "hindi": "बेल के पत्ते (Bel ke Patte)",
+        "telugu": "మారేడు ఆకులు (Maredu Akulu)"
+      },
+      "uses": [
+        "Treats digestive disorders",
+        "Controls diabetes",
+        "Improves heart health",
+        "Treats diarrhea",
+        "Purifies blood",
+        "Anti-inflammatory"
+      ],
+      "preparation": "Leaves in tea or powder",
+      "dosage": "5-7 leaves or 1-2 teaspoons powder",
+      "precautions": "Generally safe"
+    },
+    {
+      "id": 86,
+      "name": "Nimboo Patta (Lemon Leaf)",
+      "scientific_name": "Citrus limon",
+      "local_names": {
+        "tamil": "எலுமிச்சை இலை (Elumichai Ilai)",
+        "hindi": "नींबू के पत्ते (Nimbu ke Patte)",
+        "telugu": "నిమ్మ ఆకులు (Nimma Akulu)"
+      },
+      "uses": [
+        "Treats cold and flu",
+        "Improves digestion",
+        "Relieves stress",
+        "Antibacterial properties",
+        "Aromatherapy",
+        "Treats insect bites"
+      ],
+      "preparation": "Tea or essential oil",
+      "dosage": "Few leaves in tea",
+      "precautions": "Generally safe"
+    },
+    {
+      "id": 87,
+      "name": "Khajoor Patta (Date Palm Leaf)",
+      "scientific_name": "Phoenix dactylifera",
+      "local_names": {
+        "tamil": "பேரீச்சை இலை (Perichchai Ilai)",
+        "hindi": "खजूर के पत्ते (Khajoor ke Patte)",
+        "telugu": "ఖర్జూరం ఆకులు (Kharjuram Akulu)"
+      },
+      "uses": [
+        "Treats fever",
+        "Improves digestion",
+        "Treats respiratory problems",
+        "Anti-inflammatory",
+        "Boosts energy",
+        "Rich in nutrients"
+      ],
+      "preparation": "Decoction or extract",
+      "dosage": "As per traditional preparation",
+      "precautions": "Limited scientific data"
+    },
+    {
+      "id": 88,
+      "name": "Kela Patta (Banana Leaf)",
+      "scientific_name": "Musa paradisiaca",
+      "local_names": {
+        "tamil": "வாழை இலை (Vazhai Ilai)",
+        "hindi": "केले का पत्ता (Kele ka Patta)",
+        "telugu": "అరటి ఆకు (Arati Aaku)"
+      },
+      "uses": [
+        "Food served on leaf has health benefits",
+        "Antiseptic properties",
+        "Used in traditional medicine",
+        "Helps in wound healing",
+        "Rich in polyphenols",
+        "Eco-friendly serving plate"
+      ],
+      "preparation": "Fresh leaves for serving food or poultice",
+      "dosage": "Used externally or as food plate",
+      "precautions": "Generally safe"
+    },
+    {
+      "id": 89,
+      "name": "Aam Patta (Mango Leaf)",
+      "scientific_name": "Mangifera indica",
+      "local_names": {
+        "tamil": "மாம்பழ இலை (Mampazha Ilai)",
+        "hindi": "आम के पत्ते (Aam ke Patte)",
+        "telugu": "మామిడి ఆకులు (Mamidi Akulu)"
+      },
+      "uses": [
+        "Controls diabetes",
+        "Lowers blood pressure",
+        "Treats respiratory problems",
+        "Improves oral health",
+        "Kidney stone treatment",
+        "Antioxidant properties"
+      ],
+      "preparation": "Tea, powder, or fresh leaves",
+      "dosage": "Mango leaf tea once daily",
+      "precautions": "Generally safe"
+    },
+    {
+      "id": 90,
+      "name": "Kamal Patta (Lotus Leaf)",
+      "scientific_name": "Nelumbo nucifera",
+      "local_names": {
+        "tamil": "தாமரை இலை (Tamarai Ilai)",
+        "hindi": "कमल के पत्ते (Kamal ke Patte)",
+        "telugu": "తామర ఆకులు (Tamara Akulu)"
+      },
+      "uses": [
+        "Aids weight loss",
+        "Improves liver health",
+        "Reduces cholesterol",
+        "Controls bleeding",
+        "Treats diarrhea",
+        "Antioxidant properties"
+      ],
+      "preparation": "Tea or decoction",
+      "dosage": "Lotus leaf tea once daily",
+      "precautions": "Generally safe"
+    },
+    {
+      "id": 91,
+      "name": "Arjun ki Chhaal Patta (Arjuna Leaf)",
+      "scientific_name": "Terminalia arjuna",
+      "local_names": {
+        "tamil": "மருது இலை (Maruthu Ilai)",
+        "hindi": "अर्जुन के पत्ते (Arjun ke Patte)",
+        "telugu": "తెల్ల మద్ది ఆకులు (Tella Maddi Akulu)"
+      },
+      "uses": [
+        "Improves heart health",
+        "Reduces cholesterol",
+        "Lowers blood pressure",
+        "Treats wounds",
+        "Antioxidant properties",
+        "Strengthens cardiac muscles"
+      ],
+      "preparation": "Leaf powder or tea",
+      "dosage": "1-2 teaspoons powder daily",
+      "precautions": "Consult doctor if on heart medication"
+    },
+    {
+      "id": 92,
+      "name": "Sehjan Patta (Moringa Leaf)",
+      "scientific_name": "Moringa oleifera",
+      "local_names": {
+        "tamil": "முருங்கை இலை (Murungai Ilai)",
+        "hindi": "सहजन के पत्ते (Sehjan ke Patte)",
+        "telugu": "మునగ ఆకులు (Munaga Akulu)"
+      },
+      "uses": [
+        "Rich in vitamins and minerals",
+        "Anti-inflammatory",
+        "Lowers blood sugar",
+        "Boosts immunity",
+        "Improves bone health",
+        "Promotes wound healing"
+      ],
+      "preparation": "Fresh leaves, powder, or tea",
+      "dosage": "1-2 teaspoons powder daily",
+      "precautions": "Avoid large amounts during pregnancy"
+    },
+    {
+      "id": 93,
+      "name": "Amla Patta (Indian Gooseberry Leaf)",
+      "scientific_name": "Phyllanthus emblica",
+      "local_names": {
+        "tamil": "நெல்லி இலை (Nelli Ilai)",
+        "hindi": "आंवला के पत्ते (Amla ke Patte)",
+        "telugu": "ఉసిరి ఆకులు (Usiri Akulu)"
+      },
+      "uses": [
+        "Boosts immunity",
+        "Improves hair health",
+        "Aids digestion",
+        "Controls diabetes",
+        "Improves eyesight",
+        "Purifies blood"
+      ],
+      "preparation": "Leaf powder or juice",
+      "dosage": "1-2 teaspoons powder",
+      "precautions": "Generally safe"
+    },
+    {
+      "id": 94,
+      "name": "Karanj Patta (Pongamia Leaf)",
+      "scientific_name": "Pongamia pinnata",
+      "local_names": {
+        "tamil": "புங்கம் இலை (Pungam Ilai)",
+        "hindi": "करंज के पत्ते (Karanj ke Patte)",
+        "telugu": "కానుగ ఆకులు (Kanuga Akulu)"
+      },
+      "uses": [
+        "Treats skin diseases",
+        "Antiseptic properties",
+        "Treats wounds and ulcers",
+        "Reduces inflammation",
+        "Treats piles",
+        "Antimicrobial"
+      ],
+      "preparation": "Leaf paste or oil",
+      "dosage": "External application",
+      "precautions": "For external use primarily"
+    },
+    {
+      "id": 95,
+      "name": "Siris Patta (Albizia Leaf)",
+      "scientific_name": "Albizia lebbeck",
+      "local_names": {
+        "tamil": "வாகை இலை (Vagai Ilai)",
+        "hindi": "शिरीष के पत्ते (Shirish ke Patte)",
+        "telugu": "దిరిసెన ఆకులు (Dirisena Akulu)"
+      },
+      "uses": [
+        "Treats asthma and allergies",
+        "Reduces inflammation",
+        "Treats skin diseases",
+        "Improves respiratory health",
+        "Antimicrobial properties",
+        "Treats eye infections"
+      ],
+      "preparation": "Leaf decoction or powder",
+      "dosage": "2-3 grams powder daily",
+      "precautions": "Consult practitioner"
+    },
+    {
+      "id": 96,
+      "name": "Peepal Patta (Sacred Fig Leaf)",
+      "scientific_name": "Ficus religiosa",
+      "local_names": {
+        "tamil": "அரச இலை (Arasa Ilai)",
+        "hindi": "पीपल के पत्ते (Peepal ke Patte)",
+        "telugu": "రావి ఆకులు (Ravi Akulu)"
+      },
+      "uses": [
+        "Treats asthma and cough",
+        "Improves heart health",
+        "Treats skin diseases",
+        "Purifies blood",
+        "Reduces inflammation",
+        "Treats constipation"
+      ],
+      "preparation": "Leaf powder or decoction",
+      "dosage": "2-3 grams powder",
+      "precautions": "Generally safe"
+    },
+    {
+      "id": 97,
+      "name": "Bargad Patta (Banyan Leaf)",
+      "scientific_name": "Ficus benghalensis",
+      "local_names": {
+        "tamil": "ஆல் இலை (Aal Ilai)",
+        "hindi": "बरगद के पत्ते (Bargad ke Patte)",
+        "telugu": "మర్రి ఆకులు (Marri Akulu)"
+      },
+      "uses": [
+        "Treats diarrhea",
+        "Improves oral health",
+        "Treats skin diseases",
+        "Reduces inflammation",
+        "Treats diabetes",
+        "Strengthens teeth and gums"
+      ],
+      "preparation": "Leaf juice or powder",
+      "dosage": "5-10 ml juice",
+      "precautions": "Generally safe"
+    },
+    {
+      "id": 98,
+      "name": "Gular Patta (Cluster Fig Leaf)",
+      "scientific_name": "Ficus racemosa",
+      "local_names": {
+        "tamil": "அத்தி இலை (Athi Ilai)",
+        "hindi": "गूलर के पत्ते (Gular ke Patte)",
+        "telugu": "మేదిపండు ఆకులు (Medipandu Akulu)"
+      },
+      "uses": [
+        "Treats diabetes",
+        "Improves digestive health",
+        "Treats diarrhea",
+        "Improves reproductive health",
+        "Treats skin diseases",
+        "Anti-inflammatory"
+      ],
+      "preparation": "Leaf juice or powder",
+      "dosage": "5-10 ml juice",
+      "precautions": "Generally safe"
+    },
+    {
+      "id": 99,
+      "name": "Champa Patta (Magnolia Leaf)",
+      "scientific_name": "Magnolia champaca",
+      "local_names": {
+        "tamil": "சம்பங்கி இலை (Sambangki Ilai)",
+        "hindi": "चम्पा के पत्ते (Champa ke Patte)",
+        "telugu": "చంపక ఆకులు (Champaka Akulu)"
+      },
+      "uses": [
+        "Treats fever",
+        "Reduces inflammation",
+        "Treats digestive problems",
+        "Antimicrobial properties",
+        "Treats skin diseases",
+        "Aromatherapy benefits"
+      ],
+      "preparation": "Leaf decoction or oil",
+      "dosage": "As per traditional preparation",
+      "precautions": "Limited scientific data"
+    },
+    {
+      "id": 100,
+      "name": "Paneer Phool Patta (Indian Screw Tree Leaf)",
+      "scientific_name": "Helicteres isora",
+      "local_names": {
+        "tamil": "வளம்புரி இலை (Valampuri Ilai)",
+        "hindi": "मरोड़फली के पत्ते (Marodphali ke Patte)",
+        "telugu": "గూదగుడ్డ ఆకులు (Gudagudda Akulu)"
+      },
+      "uses": [
+        "Treats diabetes",
+        "Improves digestive health",
+        "Treats diarrhea",
+        "Antimicrobial properties",
+        "Treats skin diseases",
+        "Anti-inflammatory"
+      ],
+      "preparation": "Leaf powder or decoction",
+      "dosage": "2-3 grams powder",
+      "precautions": "Consult practitioner"
+    }
+  ],
+  "disclaimer": "This information is for educational purposes only. Always consult with a qualified Ayurvedic practitioner or healthcare provider before using medicinal plants, especially if you are pregnant, nursing, taking medications, or have any health conditions. Dosages may vary based on individual constitution (Prakriti) and health condition."
+}
