@@ -60,11 +60,12 @@ streamlit run app.py
 ## 📱 App Features
 
 ✅ **AI-Powered Identification** - 95%+ accuracy with MobileNetV2
+✅ **Visual Demo Mode** - Test UI even without the ML model files
+✅ **Real-time Camera Input** - Capture leaf images directly in-app
+✅ **Premium Glassmorphism UI** - Modern, high-end design styling
 ✅ **100 Medicinal Plants** - Comprehensive database
-✅ **Web Integration** - Accessible from any device with a browser
+✅ **PDF/Text Reports** - Downloadable plant profiles
 ✅ **Multi-Language Support** - Tamil, Hindi, Telugu, English
-✅ **Premium UI** - Modern glassmorphism design
-✅ **Detailed Information** - Uses, dosage, precautions
 
 ---
 
