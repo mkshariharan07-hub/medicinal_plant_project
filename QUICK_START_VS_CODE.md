@@ -1,301 +1,93 @@
-# 🚀 QUICK START GUIDE FOR VS CODE
+# 🚀 QUICK START GUIDE FOR VS CODE (STREAMLIT VERSION)
 
-## Option 1: DEMO MODE (Test Without Training) ⚡
-**Time: 15 minutes**
+## ⚡ TEST THE APP IMMEDIATELY
+**Time: 5 minutes**
 
-This lets you test the app immediately without training the ML model.
+This lets you test the web application with absolute minimal setup.
 
-### Step 1: Install Software
-
-**A. Check Python:**
-```bash
-python --version
-# Should be 3.8+, if not install from python.org
-```
-
-**B. Install Flutter:**
-- Windows: Download from https://docs.flutter.dev/get-started/install/windows
-- Mac/Linux: 
-  ```bash
-  git clone https://github.com/flutter/flutter.git -b stable ~/flutter
-  export PATH="$PATH:$HOME/flutter/bin"
-  ```
-
-**C. Verify:**
-```bash
-flutter doctor
-```
+### Step 1: Install Python
+- Ensure you have Python 3.9+ installed.
+- Check version: `python --version`
 
 ### Step 2: Open in VS Code
-
-1. **Install VS Code Extensions:**
-   - Open Extensions (Ctrl+Shift+X)
-   - Install: "Flutter" and "Dart"
-
-2. **Open Project:**
+1. **Open Project:**
    - File → Open Folder
    - Select `medicinal_plant_project`
+2. **Install Extension:**
+   - Open Extensions (Ctrl+Shift+X)
+   - Install: "Python"
 
-### Step 3: Setup Demo Mode
-
-**In VS Code Terminal (Ctrl+`):**
-
+### Step 3: Install Dependencies
+Open the VS Code Terminal (Ctrl+`) and run:
 ```bash
-# Navigate to flutter app
-cd flutter_app
-
-# Copy database file
-# Windows:
-copy ..\dataset_info\medicinal_plants_database.json assets\
-
-# Mac/Linux:
-# cp ../dataset_info/medicinal_plants_database.json assets/
-
-# Install dependencies
-flutter pub get
+pip install -r requirements.txt
 ```
 
-### Step 4: Use Demo Classifier
-
-**Edit `lib/providers/plant_provider.dart`:**
-
-Change line 3 from:
-```dart
-import '../services/plant_classifier.dart';
-```
-
-To:
-```dart
-import '../services/plant_classifier_demo.dart';
-```
-
-And change line 6 from:
-```dart
-final PlantClassifier _classifier = PlantClassifier();
-```
-
-To:
-```dart
-final PlantClassifierDemo _classifier = PlantClassifierDemo();
-```
-
-### Step 5: Run the App
-
+### Step 4: Run the Web App
 ```bash
-# In flutter_app folder
-flutter run
+streamlit run app.py
 ```
-
-**That's it! The app will run in demo mode!** 🎉
+The application will automatically open in your default web browser!
 
 ---
 
-## Option 2: FULL VERSION (With ML Model) 🤖
-**Time: 1-2 days (includes dataset collection & training)**
+## 🤖 TRAINING THE ML MODEL (Advanced)
+**Time: 2-4 hours (GPU recommended)**
 
-### Step 1: Collect Dataset
+If you want to re-train the model with your own dataset:
 
-You need leaf images for 100 plants:
+### Step 1: Prepare Your Data
+1. Navigate to `ml_model/data/`
+2. Create `train` and `validation` folders.
+3. Inside each, create subfolders named after each plant (e.g., `Neem`, `Tulsi`, `Mint`).
+4. Add 50-100 images per plant in the `train` folders.
 
-**Quick Option - Start with 10 plants:**
-1. Create folders in `ml_model/data/train/`:
-   - Neem, Tulsi, Mint, Aloe Vera, Moringa, Turmeric, Ginger, Curry Leaves, Betel, Nochi
-
-2. Download 50-100 images per plant from Google Images
-
-3. Create same folders in `ml_model/data/validation/` with 10-20 images each
-
-### Step 2: Install ML Dependencies
-
+### Step 2: Run Training Script
 ```bash
 cd ml_model
-pip install tensorflow keras numpy matplotlib pillow
-```
-
-### Step 3: Train Model
-
-```bash
 python train_model.py
 ```
+This will generate:
+- `medicinal_plant_model.h5` (The full trained model)
+- `class_indices.json` (The label mapping)
 
-**Time:** 2-4 hours (GPU) or 8-12 hours (CPU)
-
-### Step 4: Copy Model to App
-
-```bash
-# Windows:
-copy medicinal_plant_model.tflite ..\flutter_app\assets\model\
-copy class_indices.json ..\flutter_app\assets\model\
-
-# Mac/Linux:
-# cp medicinal_plant_model.tflite ../flutter_app/assets/model/
-# cp class_indices.json ../flutter_app/assets/model/
-```
-
-### Step 5: Run Full App
-
-```bash
-cd ../flutter_app
-flutter pub get
-flutter run
-```
+### Step 3: Deployment
+To use your new model, move the generated files to the root directory or update the paths in `app.py`.
 
 ---
 
-## 📱 Running on Different Devices
+## ☁️ DEPLOYING TO THE CLOUD
+**Time: 10 minutes**
 
-### Android Emulator:
-```bash
-# Install Android Studio
-# Create AVD (Virtual Device)
-# Start emulator
-flutter run
-```
-
-### Real Android Phone:
-1. Enable Developer Options (tap Build Number 7 times)
-2. Enable USB Debugging
-3. Connect phone
-4. `flutter run`
-
-### Build APK:
-```bash
-flutter build apk --release
-# APK at: build/app/outputs/flutter-apk/app-release.apk
-```
+### Via Streamlit Community Cloud (FREE)
+1. **Upload to GitHub:** Push your project folder to a GitHub repository.
+2. **Connect to Streamlit:**
+   - Go to [share.streamlit.io](https://share.streamlit.io/)
+   - Click "New app"
+   - Select your Repository, Branch, and `app.py` as the Main file path.
+3. **Deploy!** Your app will be live at a public URL (e.g., `medicinal-plant-identifier.streamlit.app`).
 
 ---
 
-## 🎯 Recommended Approach
+## 🐛 COMMON ISSUES & FIXES
 
-**For Quick Testing:**
-1. Use Demo Mode (Option 1)
-2. Get familiar with the app
-3. Test all features
+### Issue: "Streamlit command not found"
+**Fix:** Ensure your python site-packages folder is in your system PATH, or use:
+```bash
+python -m streamlit run app.py
+```
 
-**For Complete Project:**
-1. Start with 10-20 plants
-2. Train a smaller model
-3. Test and verify
-4. Expand to 100 plants later
+### Issue: "Model file not found"
+**Fix:** The `app.py` script looks for the model in the root or `ml_model/` folder. Ensure the `.h5` file exists.
 
 ---
 
-## 🐛 Common Issues & Fixes
-
-### Issue: "Flutter not found"
-**Fix:**
-```bash
-# Windows: Add to PATH via Environment Variables
-# Mac/Linux: Add to ~/.bashrc:
-export PATH="$PATH:$HOME/flutter/bin"
-source ~/.bashrc
-```
-
-### Issue: "Android licenses not accepted"
-**Fix:**
-```bash
-flutter doctor --android-licenses
-# Press 'y' for all
-```
-
-### Issue: "No devices found"
-**Fix:**
-```bash
-# Start Android emulator or connect phone
-flutter devices
-```
-
-### Issue: "Asset not found"
-**Fix:**
-```bash
-# Make sure files are in correct location:
-flutter_app/
-  assets/
-    model/
-      medicinal_plant_model.tflite
-      class_indices.json
-    medicinal_plants_database.json
-```
-
----
-
-## 📋 Checklist
-
-**Before Running:**
-- [ ] Python installed
-- [ ] Flutter installed
-- [ ] VS Code extensions installed
-- [ ] Android Studio installed
-- [ ] Emulator created OR phone connected
-- [ ] Database JSON in assets/
-- [ ] `flutter pub get` completed
-
-**Demo Mode Additional:**
-- [ ] plant_classifier_demo.dart created
-- [ ] plant_provider.dart updated to use demo
-
-**Full Mode Additional:**
-- [ ] Dataset collected
-- [ ] Model trained
-- [ ] TFLite files copied to assets/model/
-
----
-
-## 🎓 VS Code Tips
-
-**Useful Shortcuts:**
-- `Ctrl+` ` → Open Terminal
-- `Ctrl+Shift+P` → Command Palette
+## 🎓 VS CODE SHORTCUTS
+- `Ctrl + ` ` → Open/Close Terminal
+- `Ctrl + Shift + P` → Command Palette (Type "Python: Select Interpreter" to ensure you're using the right version)
 - `F5` → Run/Debug
-- `Ctrl+C` → Stop running app
-
-**Flutter Commands in VS Code:**
-1. Press `Ctrl+Shift+P`
-2. Type "Flutter"
-3. See all available commands
-
-**Hot Reload:**
-- When app is running, press `r` in terminal
-- Changes reflect immediately!
+- `Ctrl + C` → Stop the Streamlit server in the terminal
 
 ---
 
-## 🎬 Video Tutorial Steps
-
-**Record these for your presentation:**
-
-1. **Open Project** (0:00-0:30)
-   - Show VS Code
-   - Show project structure
-
-2. **Explain Code** (0:30-2:00)
-   - ML model architecture
-   - Flutter app structure
-
-3. **Run Demo** (2:00-4:00)
-   - Start app
-   - Scan a leaf (use gallery image)
-   - Show results
-   - Browse library
-   - Check history
-
-4. **Show Code** (4:00-5:00)
-   - Main features
-   - ML integration
-   - Database
-
----
-
-## 🚀 Next Steps
-
-1. **Start with Demo Mode** - Get app running
-2. **Collect Small Dataset** - 10 plants first
-3. **Train Small Model** - Verify pipeline works
-4. **Expand Dataset** - Add more plants
-5. **Re-train** - Final model with 100 plants
-6. **Polish** - Add features, improve UI
-7. **Document** - Screenshots, results
-8. **Present** - Demo to staff
-
-**Good luck! You've got this! 💪🌿**
+🎊 **Happy Coding!** 🎊

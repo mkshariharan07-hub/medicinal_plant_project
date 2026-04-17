@@ -83,7 +83,7 @@ st.markdown("""
         color: #333;
     }
 </style>
-""", unsafe_content_allowed=True)
+""", unsafe_allow_html=True)
 
 # Helper function to load data
 @st.cache_resource
@@ -182,28 +182,28 @@ if app_mode == "Identify Plant":
             
             if plant_info:
                 st.markdown("---")
-                st.markdown(f'<div class="plant-header">{plant_info["name"]}</div>', unsafe_content_allowed=True)
-                st.markdown(f'<div class="scientific-name">{plant_info["scientific_name"]}</div>', unsafe_content_allowed=True)
+                st.markdown(f'<div class="plant-header">{plant_info["name"]}</div>', unsafe_allow_html=True)
+                st.markdown(f'<div class="scientific-name">{plant_info["scientific_name"]}</div>', unsafe_allow_html=True)
                 
                 tab1, tab2, tab3 = st.tabs(["Medicinal Uses", "Preparation & Dosage", "Local Names"])
                 
                 with tab1:
-                    st.markdown('<div class="section-title">Medicinal Uses</div>', unsafe_content_allowed=True)
+                    st.markdown('<div class="section-title">Medicinal Uses</div>', unsafe_allow_html=True)
                     for use in plant_info['uses']:
                         st.markdown(f"- {use}")
                     
-                    st.markdown('<div class="section-title">Precautions</div>', unsafe_content_allowed=True)
+                    st.markdown('<div class="section-title">Precautions</div>', unsafe_allow_html=True)
                     st.warning(plant_info['precautions'])
                 
                 with tab2:
-                    st.markdown('<div class="section-title">Preparation Method</div>', unsafe_content_allowed=True)
+                    st.markdown('<div class="section-title">Preparation Method</div>', unsafe_allow_html=True)
                     st.info(plant_info['preparation'])
                     
-                    st.markdown('<div class="section-title">Recommended Dosage</div>', unsafe_content_allowed=True)
+                    st.markdown('<div class="section-title">Recommended Dosage</div>', unsafe_allow_html=True)
                     st.success(plant_info['dosage'])
                 
                 with tab3:
-                    st.markdown('<div class="section-title">Regional Names</div>', unsafe_content_allowed=True)
+                    st.markdown('<div class="section-title">Regional Names</div>', unsafe_allow_html=True)
                     for lang, name in plant_info['local_names'].items():
                         st.markdown(f"**{lang.capitalize()}**: {name}")
             else:
@@ -256,4 +256,4 @@ elif app_mode == "About":
 
 # Footer
 st.markdown("---")
-st.markdown("<div style='text-align: center; color: #777;'>© 2026 Medicinal Plant AI Identification System | Built with ❤️ using Streamlit</div>", unsafe_content_allowed=True)
+st.markdown("<div style='text-align: center; color: #777;'>© 2026 Medicinal Plant AI Identification System | Built with ❤️ using Streamlit</div>", unsafe_allow_html=True)

@@ -31,9 +31,12 @@ medicinal_plant_project/
 
 ### Prerequisites
 
-- Python 3.9+
+- Python 3.9 - 3.11 (Python 3.12+ may have compatibility issues with TensorFlow)
 - 4GB RAM minimum
 - GPU (recommended for model training)
+
+> [!IMPORTANT]
+> **Streamlit Cloud Deployment**: In your app settings on Streamlit Cloud, ensure the **Python version is set to 3.11**. Python 3.12+ currently does not support the required TensorFlow versions.
 
 ### Step 1: Install Dependencies
 
