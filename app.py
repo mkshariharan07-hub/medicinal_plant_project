@@ -158,7 +158,7 @@ if app_mode == "🛰️ Live Identification":
             uploaded_file = st.camera_input("Capture specimen")
         
         if uploaded_file:
-            st.image(uploaded_file, use_column_width=True, caption="Specimen Acquired")
+            st.image(uploaded_file, use_container_width=True, caption="Specimen Acquired")
         st.markdown('</div>', unsafe_allow_html=True)
 
     with col_info:
@@ -170,12 +170,30 @@ if app_mode == "🛰️ Live Identification":
                 
                 # logic (real or demo)
                 if predictor_data and not use_demo:
-                    # Simplified real prediction block
-                    plant_name = "Neem" # Placeholder for briefity
-                    confidence = 0.94
+                    model, class_names = predictor_data
+                    
+                    # Image Preprocessing
+                    img = image.resize((224, 224))
+                    img_array = np.array(img) / 255.0
+                    img_array = np.expand_dims(img_array, axis=0)
+                    
+                    # Execute Neural Inference
+                    predictions = model.predict(img_array, verbose=0)
+                    top_idx = np.argmax(predictions[0])
+                    confidence = float(predictions[0][top_idx])
+                    plant_name = class_names.get(str(top_idx), class_names.get(top_idx, "Unknown"))
                 else:
-                    plant_name = "Tulsi (Holy Basil)" if use_demo else "Unknown"
-                    confidence = 0.978 if use_demo else 0.0
+                    # DYNAMIC MOCK PREDICTION FOR DEMO
+                    if use_demo and plant_db:
+                        import random
+                        # Seed with file name to keep it consistent for one upload but random across sessions
+                        random.seed(uploaded_file.name)
+                        demo_plant = random.choice(plant_db)
+                        plant_name = demo_plant['name']
+                        confidence = random.uniform(0.92, 0.99)
+                    else:
+                        plant_name = "Unknown"
+                        confidence = 0.0
 
                 if confidence > 0.4:
                     st.metric("Probability Match", plant_name, f"{confidence*100:.1f}%")
