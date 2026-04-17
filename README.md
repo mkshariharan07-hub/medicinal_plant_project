@@ -1,67 +1,50 @@
-# 🌿 Medicinal Plant Identification & Usage Prediction App
+# 🌿 Medicinal Plant Identification & Usage Web App
 
-An AI-powered Flutter mobile application for identifying medicinal plants from leaf images and providing detailed usage information.
+An AI-powered Streamlit web application for identifying medicinal plants from leaf images and providing detailed usage information.
 
 ## ✨ Features
 
 - 🤖 **AI-Powered Identification**: Identify 100 medicinal plants using deep learning
-- 📸 **Camera Integration**: Scan leaves in real-time
+- 🌐 **Web Interface**: Easy-to-use Streamlit dashboard
+- 📸 **Image Upload**: Upload leaf photos for instant analysis
 - 📚 **Comprehensive Database**: Detailed information for 100 medicinal plants
-- 🌍 **Multi-Language**: Names in Tamil, Hindi, Telugu, and English
+- 🌍 **Multi-Language Support**: Regional names in Tamil, Hindi, Telugu, and English
 - 📊 **95%+ Accuracy**: MobileNetV2-based CNN model
-- 📜 **Scan History**: Track all your identifications
-- 📱 **Offline Capable**: Works without internet connection
+- 💻 **Cross-Platform**: Accessible via any web browser
 
 ## 🎯 Project Structure
 
 ```
 medicinal_plant_project/
+├── app.py                         # Streamlit Web Application (Main Entry)
 ├── ml_model/                      # Machine Learning components
 │   ├── train_model.py            # Model training script
 │   ├── predict.py                # Prediction/testing script
-│   └── requirements.txt          # Python dependencies
-├── flutter_app/                   # Flutter mobile app
-│   ├── lib/
-│   │   ├── main.dart             # App entry point
-│   │   ├── models/               # Data models
-│   │   ├── screens/              # UI screens
-│   │   ├── services/             # ML service
-│   │   ├── providers/            # State management
-│   │   └── widgets/              # Reusable widgets
-│   ├── assets/
-│   │   ├── model/                # TFLite model files
-│   │   └── medicinal_plants_database.json
-│   └── pubspec.yaml              # Flutter dependencies
+│   └── requirements.txt          # ML dependencies
 ├── dataset_info/
 │   └── medicinal_plants_database.json  # Complete plant database
-└── documentation/
-    └── COMPLETE_GUIDE.md         # Comprehensive setup guide
+├── requirements.txt               # Main project dependencies
+└── README.md                      # Project documentation
 ```
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 
-- Python 3.8+
-- Flutter SDK 3.0+
-- Android Studio / Xcode
+- Python 3.9+
 - 4GB RAM minimum
-- GPU (recommended for training)
+- GPU (recommended for model training)
 
-### Step 1: Train the ML Model
+### Step 1: Install Dependencies
 
 ```bash
-cd ml_model
-pip install -r requirements.txt --break-system-packages
-python train_model.py
+pip install -r requirements.txt
 ```
 
-### Step 2: Setup Flutter App
+### Step 2: Run the Application
 
 ```bash
-cd flutter_app
-flutter pub get
-flutter run
+streamlit run app.py
 ```
 
 ## 📊 Model Performance
@@ -87,52 +70,28 @@ The app includes 100 medicinal plants including:
 
 ## 💻 Technologies Used
 
+- **Web Framework**: Streamlit
 - **Machine Learning**: TensorFlow, Keras, MobileNetV2
-- **Mobile Development**: Flutter, Dart
-- **State Management**: Provider
-- **Image Processing**: TFLite, Image Picker
-- **UI**: Material Design, Google Fonts
-
-## 📱 Screenshots
-
-[Add screenshots of your app here]
+- **Data Handling**: Pandas, NumPy
+- **Image Processing**: PIL (Pillow)
+- **UI Design**: Custom CSS, HTML5
 
 ## 🎓 Academic/Research Use
 
 This project is ideal for:
 - Final year engineering projects
 - Machine learning research
-- Mobile app development thesis
 - AI in healthcare applications
+- Traditional medicine documentation
 
 ## 📝 Research Paper Outline
 
 1. **Introduction**: AI-based plant identification
 2. **Literature Review**: Existing systems analysis
 3. **Methodology**: CNN architecture, Transfer learning
-4. **Implementation**: App development, ML integration
+4. **Implementation**: Web development, ML integration
 5. **Results**: Accuracy metrics, performance analysis
 6. **Conclusion**: Future improvements
-
-## 🔧 Troubleshooting
-
-### Model not loading
-```bash
-flutter clean
-flutter pub get
-# Verify assets path in pubspec.yaml
-```
-
-### Camera issues
-- Check permissions in AndroidManifest.xml
-- Test on real device (not emulator)
-
-### Build errors
-```bash
-flutter clean
-flutter pub get
-flutter pub upgrade
-```
 
 ## 🤝 Contributing
 
@@ -150,27 +109,10 @@ Educational/Research use only
 
 - Plant data compiled from Ayurvedic and traditional medicine sources
 - TensorFlow team for pre-trained models
-- Flutter team for excellent documentation
-
-## 📧 Contact
-
-For questions or support regarding this project:
-- Create an issue in the repository
-- Check the COMPLETE_GUIDE.md for detailed instructions
+- Streamlit team for the excellent web framework
 
 ---
 
 **Note**: Always consult a qualified healthcare professional before using any medicinal plants. This app is for educational purposes only.
-
-## 🎯 Future Enhancements
-
-- [ ] Expand to 200+ plants
-- [ ] Add AR features
-- [ ] Cloud sync
-- [ ] User accounts
-- [ ] Community contributions
-- [ ] Real-time disease detection
-- [ ] Dosage calculator
-- [ ] Remedies suggestions
 
 Happy Coding! 🚀🌿
