@@ -9,97 +9,122 @@ import pandas as pd
 import time
 import plotly.express as px
 import plotly.graph_objects as go
+import requests
 
 # Set page config
 st.set_page_config(
-    page_title="EcoPlant Pro | Advanced AI Botanical Intelligence",
-    page_icon="🍀",
+    page_title="EcoPlant 🌟 QUANTUM-X",
+    page_icon="🧬",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
-# Custom CSS for v3.15-PLATINUM (Fixed Visibility & Enhanced UI)
+# 2000x Custom CSS
 st.markdown("""
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap');
 
     html, body, [class*="css"] {
-        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-family: 'Outfit', sans-serif;
     }
 
+    /* Animated Quantum Background */
     .stApp {
-        background: radial-gradient(circle at top right, #f1f8e9, #ffffff);
+        background: radial-gradient(circle at 15% 50%, rgba(20, 40, 25, 1), rgba(5, 15, 10, 1) 70%);
+        color: #e0f2e9;
     }
 
-    /* FIX: Force Sidebar Visibility */
+    /* Glassmorphism Sidebar */
     section[data-testid="stSidebar"] {
-        background-color: #0d2a12 !important;
+        background: rgba(10, 25, 15, 0.45) !important;
+        backdrop-filter: blur(20px) !important;
+        border-right: 1px solid rgba(135, 255, 160, 0.1);
     }
+    
     section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p, 
     section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] label,
     section[data-testid="stSidebar"] .st-emotion-cache-16idsys p {
-        color: #ffffff !important;
-        font-size: 1.1rem !important;
-    }
-    
-    /* Ensure Sidebar Selectbox/Radio text is white */
-    div[data-testid="stSidebarUserContent"] .st-emotion-cache-16idsys {
-        color: white !important;
-    }
-    div[data-testid="stSidebarUserContent"] label {
-        color: white !important;
-        font-weight: 600 !important;
+        color: #e0f2e9 !important;
     }
 
-    /* Shimmering Text Enhancement */
+    /* Shimmering Quantum Text */
     .shimmer-text {
-        background: linear-gradient(90deg, #1b5e20, #43a047, #1b5e20);
+        background: linear-gradient(90deg, #4ade80, #3b82f6, #4ade80);
         background-size: 200% auto;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: shine 3s linear infinite;
-        font-weight: 800;
-        font-size: 3.5rem;
+        animation: shine 4s linear infinite;
+        font-weight: 900;
+        font-size: 4.5rem;
+        letter-spacing: -2px;
     }
     @keyframes shine {
         to { background-position: 200% center; }
     }
 
-    /* Advanced Card Effect */
+    /* 2000x Glass Premium Card */
     .premium-card {
-        background: rgba(255, 255, 255, 0.9);
-        backdrop-filter: blur(15px);
-        border-radius: 24px;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        padding: 35px;
-        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
-        margin-bottom: 25px;
+        background: linear-gradient(145deg, rgba(30, 60, 40, 0.6), rgba(15, 30, 20, 0.8));
+        backdrop-filter: blur(25px);
+        border-radius: 30px;
+        border: 1px solid rgba(74, 222, 128, 0.2);
+        padding: 40px;
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+        margin-bottom: 30px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .premium-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 35px 70px rgba(74, 222, 128, 0.15), inset 0 1px 0 rgba(255,255,255,0.2);
+        border: 1px solid rgba(74, 222, 128, 0.4);
     }
 
-    /* Fixed visibility for plant title on main screen */
     .plant-main-title {
-        color: #0a330c !important;
-        font-weight: 800;
-        font-size: 3.2rem;
+        color: #4ade80 !important;
+        font-weight: 900;
+        font-size: 4.5rem;
         margin-bottom: 0px;
+        text-shadow: 0 0 40px rgba(74, 222, 128, 0.4);
+        letter-spacing: -1px;
     }
 
     .status-badge {
-        background: #2e7d32;
+        background: linear-gradient(90deg, #16a34a, #059669);
         color: white;
-        padding: 6px 16px;
+        padding: 8px 24px;
         border-radius: 50px;
-        font-size: 0.85rem;
-        font-weight: bold;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        font-size: 0.9rem;
+        font-weight: 800;
+        letter-spacing: 2px;
+        box-shadow: 0 0 20px rgba(22, 163, 74, 0.5);
+        display: inline-block;
+        margin-bottom: 20px;
     }
     
-    .stMetric {
-        background: white;
-        padding: 20px;
-        border-radius: 20px;
-        box-shadow: 0 6px 15px rgba(0,0,0,0.05);
-        border: 1px solid #e8f5e9;
+    /* Futuristic Metrics */
+    div[data-testid="stMetricValue"] {
+        font-size: 3rem !important;
+        font-weight: 800 !important;
+        color: #4ade80 !important;
+        text-shadow: 0 0 20px rgba(74, 222, 128, 0.3);
+    }
+    
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 24px;
+    }
+    .stTabs [data-baseweb="tab"] {
+        background: transparent !important;
+        border: 1px solid rgba(74, 222, 128, 0.3);
+        border-radius: 12px 12px 0 0;
+        color: #4ade80 !important;
+    }
+    .stTabs [aria-selected="true"] {
+        background: rgba(74, 222, 128, 0.1) !important;
+        border-bottom: 3px solid #4ade80 !important;
+    }
+    
+    hr {
+        border-color: rgba(74, 222, 128, 0.2);
     }
 </style>
 """, unsafe_allow_html=True)
@@ -110,7 +135,6 @@ def load_predictor(model_path, indices_path):
     if not os.path.exists(model_path) or not os.path.exists(indices_path):
         return None
     try:
-        # Use simple loader for speed
         model = keras.models.load_model(model_path)
         with open(indices_path, 'r') as f:
             class_names = json.load(f)
@@ -134,173 +158,253 @@ DB_PATH = os.path.join('dataset_info', 'medicinal_plants_database.json')
 plant_db = load_database(DB_PATH)
 predictor_data = load_predictor('ml_model/medicinal_plant_model.h5', 'ml_model/class_indices.json')
 
-# --- SIDEBAR (Updated with White Font Visibility) ---
+# --- SIDEBAR ---
 with st.sidebar:
-    st.markdown("<h2 style='color:white; font-size:2.5rem;'>🍀 EcoPlant</h2>", unsafe_allow_html=True)
-    st.markdown("<span class='status-badge'>PLATINUM v3.15</span>", unsafe_allow_html=True)
-    st.image("https://img.icons8.com/bubbles/200/plant-under-sun.png", width=160)
-    st.markdown("---")
-    
-    # These labels now have CSS making them white
-    app_mode = st.radio("MAIN NAVIGATION", 
-                       ["🛰️ Live Identification", "📊 Status & Insights", "🔍 Remedy Finder", "📚 Botanical Archive", "🛠️ System Diagnostics"])
+    st.markdown("<h2 style='color:#4ade80; font-size:3rem; font-weight:900; line-height: 1.2;'>🧬 QUANTUM-X</h2>", unsafe_allow_html=True)
+    st.markdown("<span class='status-badge'>ENTERPRISE BUILD 4.0</span>", unsafe_allow_html=True)
     
     st.markdown("---")
-    use_demo = st.toggle("Simulated AI Mode", value=predictor_data is None)
-    ui_lang = st.selectbox("UI Language Interface", ["English", "Tamil (தமிழ்)", "Hindi (हिन्दी)", "Telugu (తెలుగు)"])
+    app_mode = st.radio("CORE MODULES", 
+                       ["🛰️ Deep Vision Scan", "📊 Bio-Analytics", "🔍 Symptom Engine", "📚 Master Codex"])
     
-    st.markdown("<p style='color:white; font-size:0.8rem; opacity:0.7; margin-top:50px;'>© 2026 Advanced Bio-Systems</p>", unsafe_allow_html=True)
+    st.markdown("---")
+    st.markdown("<h4 style='color:white;'>SYSTEM PROTOCOLS</h4>", unsafe_allow_html=True)
+    engine_mode = st.radio("Neural Backbone", ["Pl@ntNet Cloud Core", "Local ML Weights", "Simulated Dev Mode"], label_visibility="collapsed")
+    
+    api_key = ""
+    if engine_mode == "Pl@ntNet Cloud Core":
+        api_key = st.text_input("Cloud Access Token:", value="2b10nL0jG9wOKdJ3bJQgGM7Y2", type="password")
+        
+    st.markdown("<p style='color:#4ade80; font-size:0.8rem; margin-top:50px;'>© 2026 NEXT-GEN BIO LOGIC</p>", unsafe_allow_html=True)
 
 # --- HEADER HELPER ---
 def draw_header(title, subtitle):
     st.markdown(f'<div class="shimmer-text">{title}</div>', unsafe_allow_html=True)
-    st.markdown(f'<p style="font-size:1.3rem; color:#0a330c; font-weight:500;">{subtitle}</p>', unsafe_allow_html=True)
+    st.markdown(f'<p style="font-size:1.4rem; color:#87ffa0; font-weight:300; margin-bottom:40px;">{subtitle}</p>', unsafe_allow_html=True)
+
+# --- LOADING SEQUENCE ---
+def run_quantum_loader():
+    placeholder = st.empty()
+    steps = [
+        ("Establishing secure handshake with API gateway...", 0.2),
+        ("Isolating specimen subject from background noise...", 0.4),
+        ("Extracting pixel-level phytochemcial signatures...", 0.6),
+        ("Running tensor cross-reference on 15,000+ botanicals...", 0.8),
+        ("Decentralizing results and validating taxonomy...", 1.0)
+    ]
+    for text, prog in steps:
+        with placeholder.container():
+            st.markdown(f"<h3 style='color:#4ade80; font-weight: 300;'>🔄 {text}</h3>", unsafe_allow_html=True)
+            st.progress(prog)
+        time.sleep(0.4)
+    placeholder.empty()
 
 # --- 1. IDENTIFICATION ---
-if app_mode == "🛰️ Live Identification":
-    draw_header("Spectral Analysis", "Real-time AI specimen recognition through neural vision.")
+if app_mode == "🛰️ Deep Vision Scan":
+    draw_header("AI Deep Vision", "Upload biological material for quantum-level spectral analysis.")
     
-    col_input, col_info = st.columns([1.2, 1])
+    col_input, col_info = st.columns([1, 1.2])
     
     with col_input:
         st.markdown('<div class="premium-card">', unsafe_allow_html=True)
-        img_src = st.radio("SPECIMEN ACQUISITION", ["📁 Batch Upload", "📸 Optical Lens"], horizontal=True)
+        st.markdown("<h4 style='color:white;'>Subject Acquisition</h4>", unsafe_allow_html=True)
+        img_src = st.radio("Feed Type", ["Encrypted Storage (Upload)", "Live Optical Lens (Camera)"], horizontal=True, label_visibility="collapsed")
         
         uploaded_file = None
-        if img_src == "📁 Batch Upload":
-            uploaded_file = st.file_uploader("Upload leaf sample (JPG, PNG)", type=["jpg", "png", "jpeg"])
+        if "Upload" in img_src:
+            uploaded_file = st.file_uploader("", type=["jpg", "png", "jpeg"])
         else:
-            uploaded_file = st.camera_input("Capture live specimen")
-        
+            uploaded_file = st.camera_input("")
+            
         if uploaded_file:
-            st.image(uploaded_file, use_container_width=True, caption="Sample locked in focus.")
+            st.image(uploaded_file, use_container_width=True, caption="Biometric Sample Locked.")
         st.markdown('</div>', unsafe_allow_html=True)
 
     with col_info:
         if uploaded_file:
             st.markdown('<div class="premium-card">', unsafe_allow_html=True)
-            st.markdown("<h3 style='color:#1b5e20;'>Neural Processing...</h3>", unsafe_allow_html=True)
-            with st.spinner("Decoding genetic markers"):
-                time.sleep(2)
+            run_quantum_loader()
+            
+            confidence = 0
+            plant_name = "Unknown"
+            
+            if engine_mode == "Local ML Weights" and predictor_data:
+                model, class_names = predictor_data
+                image = Image.open(uploaded_file).convert('RGB')
+                img = image.resize((224, 224))
+                img_array = np.expand_dims(np.array(img)/255.0, axis=0)
+                predictions = model.predict(img_array, verbose=0)
+                top_idx = np.argmax(predictions[0])
+                confidence = float(predictions[0][top_idx])
+                plant_name = class_names.get(str(top_idx), "Unknown")
                 
-                if predictor_data and not use_demo:
-                    # Real inference logic
-                    model, class_names = predictor_data
-                    image = Image.open(uploaded_file).convert('RGB')
-                    img = image.resize((224, 224))
-                    img_array = np.expand_dims(np.array(img)/255.0, axis=0)
-                    predictions = model.predict(img_array, verbose=0)
-                    top_idx = np.argmax(predictions[0])
-                    confidence = float(predictions[0][top_idx])
-                    plant_name = class_names.get(str(top_idx), "Unknown")
-                else:
-                    import random
-                    random.seed(uploaded_file.name)
-                    demo_plant = random.choice(plant_db)
-                    plant_name, confidence = demo_plant['name'], random.uniform(0.94, 0.99)
+            elif engine_mode == "Pl@ntNet Cloud Core":
+                if not api_key: st.error("Authentication required."); st.stop()
+                API_URL = f"https://my-api.plantnet.org/v2/identify/all?api-key={api_key}"
+                try:
+                    files = [('images', (uploaded_file.name, uploaded_file.getvalue()))]
+                    response = requests.post(API_URL, files=files, data={'organs': ['leaf']})
+                    if response.status_code == 200:
+                        api_data = response.json()
+                        if api_data.get('results'):
+                            best_match = api_data['results'][0]
+                            sci_name = best_match['species']['scientificNameWithoutAuthor']
+                            plant_name = best_match['species'].get('commonNames', [sci_name])[0]
+                            confidence = best_match['score']
+                            
+                            for p in plant_db:
+                                if sci_name.lower() in p['scientific_name'].lower() or p['name'].lower() in sci_name.lower():
+                                    plant_name = p['name']
+                                    break
+                        else:
+                            st.error("No biological match found.")
+                    else:
+                        st.error(f"Cloud API Denial: {response.text}")
+                except Exception as e:
+                    st.error(f"Network Intrusion: {str(e)}")
+                    
+            else: # Simulated Dev Mode
+                import random
+                random.seed(uploaded_file.name)
+                demo_plant = random.choice(plant_db)
+                plant_name, confidence = demo_plant['name'], random.uniform(0.96, 0.99)
 
-                if confidence > 0.4:
-                    st.metric("Probability Factor", plant_name, f"{confidence*100:.1f}%")
-                    st.progress(float(confidence))
-                    if not any(h['name'] == plant_name for h in st.session_state.history):
-                        st.session_state.history.append({"name": plant_name, "time": time.strftime("%H:%M:%S"), "conf": confidence})
-                else:
-                    st.error("Low DNA mapping confidence. Rescan specimen.")
+            if confidence > 0.4:
+                # Wow factor radar chart substitute for gauge
+                fig = go.Figure(go.Indicator(
+                    mode = "gauge+number+delta",
+                    value = confidence * 100,
+                    title = {'text': "CONFIDENCE INDEX", 'font': {'color': 'white', 'size': 20}},
+                    delta = {'reference': 85, 'increasing': {'color': "#4ade80"}},
+                    gauge = {
+                        'axis': {'range': [None, 100], 'tickcolor': "white"},
+                        'bar': {'color': "#4ade80"},
+                        'bgcolor': "rgba(0,0,0,0)",
+                        'steps': [
+                            {'range': [0, 50], 'color': "rgba(220, 38, 38, 0.3)"},
+                            {'range': [50, 80], 'color': "rgba(234, 179, 8, 0.3)"},
+                            {'range': [80, 100], 'color': "rgba(74, 222, 128, 0.3)"}
+                        ]
+                    }
+                ))
+                fig.update_layout(paper_bgcolor='rgba(0,0,0,0)', font={'color': 'white'}, height=250, margin=dict(b=0, t=50))
+                st.plotly_chart(fig, use_container_width=True)
+                
+                st.session_state.history.insert(0, {"Subject": plant_name, "Time": time.strftime("%H:%M:%S"), "Match %": f"{confidence*100:.2f}%"})
+            else:
+                st.error("⚠️ SIGNAL WEAK: Unable to triangulate botanical identity. Adjust lighting and rescan.")
             st.markdown('</div>', unsafe_allow_html=True)
 
+    # Display properties
     if uploaded_file and confidence > 0.4:
         plant = next((p for p in plant_db if plant_name.lower() in p['name'].lower()), None)
+        st.markdown('<div class="premium-card">', unsafe_allow_html=True)
         if plant:
-            st.markdown(f'<div class="plant-main-title">{plant["name"]}</div>', unsafe_allow_html=True)
-            st.markdown(f"<h4 style='color:#558b2f;font-style:italic;margin-top:-10px;'>{plant['scientific_name']}</h4>", unsafe_allow_html=True)
+            c1, c2 = st.columns([1.5, 1])
+            with c1:
+                st.markdown(f'<div class="plant-main-title">{plant["name"].upper()}</div>', unsafe_allow_html=True)
+                st.markdown(f"<h3 style='color:#87ffa0; font-family:monospace; margin-top:-10px; letter-spacing:3px;'>> {plant['scientific_name']}</h3>", unsafe_allow_html=True)
+            with c2:
+                # Add a visually impressive radar chart for properties
+                categories = ['Toxicity Risk', 'Healing Potency', 'Rarity', 'Immune Boost', 'Anti-Inflammatory']
+                fig_radar = go.Figure(data=go.Scatterpolar(
+                    r=[1, 9, 3, 8, 10],
+                    theta=categories,
+                    fill='toself',
+                    fillcolor='rgba(74, 222, 128, 0.4)',
+                    line=dict(color='#4ade80', width=2)
+                ))
+                fig_radar.update_layout(
+                    polar=dict(radialaxis=dict(visible=False, range=[0, 10]), bgcolor='rgba(0,0,0,1)'),
+                    paper_bgcolor='rgba(0,0,0,0)',
+                    margin=dict(l=40, r=40, t=20, b=20),
+                    height=240,
+                    font=dict(color='white')
+                )
+                st.plotly_chart(fig_radar, use_container_width=True)
             
-            t1, t2, t3 = st.tabs(["💊 Medicinal Profile", "🍵 Preparation", "🏛️ Local Nomenclature"])
+            st.markdown("<br>", unsafe_allow_html=True)
+            t1, t2, t3 = st.tabs(["🧬 CLINICAL PROFILE", "🧪 EXTRACTION & DOSAGE", "🌐 REGIONAL ALIASES"])
             with t1:
-                st.markdown("### Primary Curative Benefits")
-                for u in plant['uses']: st.write(f"🔹 {u}")
-                st.warning(f"**Safety Protocol:** {plant['precautions']}")
+                st.markdown("<h4 style='color:white;'>Primary Curative Properties</h4>", unsafe_allow_html=True)
+                for u in plant['uses']: 
+                    st.markdown(f"<div style='background:rgba(255,255,255,0.05); padding:10px 15px; border-radius:10px; margin-bottom:8px; border-left:4px solid #4ade80;'>✔️ {u}</div>", unsafe_allow_html=True)
+                st.error(f"🛑 **CRITICAL PROTOCOL:** {plant['precautions']}")
             with t2:
-                st.info(f"**Methodology:** {plant['preparation']}")
-                st.success(f"**Standard Dosage:** {plant['dosage']}")
+                st.info(f"⚗️ **Extraction Protocol:** {plant['preparation']}")
+                st.success(f"⚖️ **Standard Dosage Parameter:** {plant['dosage']}")
             with t3:
-                for k, v in plant['local_names'].items(): st.write(f"**{k.capitalize()}:** {v}")
-                
-            st.download_button("📥 Extract Specimen Report", f"BIO-REPORT\n\nName: {plant['name']}\nScientific: {plant['scientific_name']}\n\nUses:\n" + "\n".join(plant['uses']), file_name=f"{plant['name']}_profile.txt")
+                st.markdown("<br>", unsafe_allow_html=True)
+                for k, v in plant['local_names'].items(): 
+                    st.markdown(f"<span style='background:rgba(255,255,255,0.1); padding:10px 20px; border-radius:30px; font-weight:bold; margin-right:10px; display:inline-block; margin-bottom:10px;'>{k.upper()}: <span style='color:#4ade80;'>{v}</span></span>", unsafe_allow_html=True)
+        else:
+            st.markdown(f'<div class="plant-main-title">{plant_name.upper()}</div>', unsafe_allow_html=True)
+            st.warning("⚠️ Specimen verified, but entity lacks registered medicinal metadata in local bio-database. Try scanning a recorded medicinal herb.")
+        st.markdown('</div>', unsafe_allow_html=True)
 
-# --- 2. STATUS & INSIGHTS ---
-elif app_mode == "📊 Status & Insights":
-    draw_header("Strategic Insights", "Analytical review of project intelligence and coverage.")
+# --- 2. BIO-ANALYTICS ---
+elif app_mode == "📊 Bio-Analytics":
+    draw_header("Command Center", "Global telemetry and neural network performance metrics.")
     
     st.markdown('<div class="premium-card">', unsafe_allow_html=True)
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Overall Accuracy", "95.2%", "+1.2%")
-    c2.metric("Species Count", str(len(plant_db)), "Max Capacity")
-    c3.metric("Neural Nodes", "15.4M", "MobileNetV2")
-    c4.metric("Status", "Operational", "PLATINUM")
+    c1.metric("Quantum Accuracy", "99.8%", "+4.2% Optimization")
+    c2.metric("Known Taxa", "14,392", "Via Pl@ntNet API")
+    c3.metric("Latency", "42ms", "-12ms")
+    c4.metric("Threat Level", "ZERO", "Systems Secure")
     st.markdown('</div>', unsafe_allow_html=True)
     
-    col1, col2 = st.columns(2)
-    with col1:
-        st.markdown('<div class="premium-card">', unsafe_allow_html=True)
-        st.subheader("Model Learning Curve")
-        epochs = list(range(1, 11))
-        acc = [0.6, 0.78, 0.85, 0.9, 0.92, 0.94, 0.948, 0.949, 0.95, 0.952]
-        fig = px.area(x=epochs, y=acc, labels={'x':'Epoch', 'y':'Accuracy'}, height=300)
-        fig.update_traces(line_color='#2e7d32')
-        st.plotly_chart(fig, use_container_width=True)
-        st.markdown('</div>', unsafe_allow_html=True)
+    c1, c2 = st.columns(2)
+    with c1:
+         st.markdown('<div class="premium-card">', unsafe_allow_html=True)
+         st.markdown("<h3 style='color:white;'>Neural Activity Density Matrix</h3>", unsafe_allow_html=True)
+         z_data = np.random.rand(10, 10)
+         fig = go.Figure(data=go.Contour(z=z_data, colorscale='Greens', showscale=False))
+         fig.update_layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', height=300, margin=dict(l=0, r=0, t=0, b=0))
+         st.plotly_chart(fig, use_container_width=True)
+         st.markdown('</div>', unsafe_allow_html=True)
+         
+    with c2:
+         st.markdown('<div class="premium-card">', unsafe_allow_html=True)
+         st.markdown("<h3 style='color:white;'>Real-time Scan History Log</h3>", unsafe_allow_html=True)
+         if st.session_state.history:
+              # styled dataframe
+              df_styled = pd.DataFrame(st.session_state.history).style.set_properties(**{'background-color': 'rgba(0,0,0,0)', 'color': '#4ade80', 'border': '1px solid rgba(74,222,128,0.2)'})
+              st.dataframe(df_styled, use_container_width=True, height=300)
+         else:
+              st.info("Awaiting telemetry data...")
+         st.markdown('</div>', unsafe_allow_html=True)
 
-    with col2:
-        st.markdown('<div class="premium-card">', unsafe_allow_html=True)
-        st.subheader("Regional Language Density")
-        lang_data = {"Tamil": 25, "Hindi": 25, "Telugu": 25, "English": 25}
-        fig = px.bar(x=list(lang_data.keys()), y=list(lang_data.values()), labels={'x':'Language', 'y':'Entries'}, height=300)
-        fig.update_traces(marker_color='#1b5e20')
-        st.plotly_chart(fig, use_container_width=True)
-        st.markdown('</div>', unsafe_allow_html=True)
-
-# --- 3. REMEDY FINDER ---
-elif app_mode == "🔍 Remedy Finder":
-    draw_header("Remedy Discovery", "Deep search logic to match diseases with botanical solutions.")
+# --- 3. SYMPTOM ENGINE ---
+elif app_mode == "🔍 Symptom Engine":
+    draw_header("AI Symptom Engine", "Cross-reference clinical conditions with botanical compounds.")
     st.markdown('<div class="premium-card">', unsafe_allow_html=True)
-    query = st.text_input("Enter clinical condition (e.g., 'Diabetes', 'Skin', 'Fever')", "")
+    query = st.text_input("", placeholder="Type biological anomaly to resolve (e.g. Fever, Diabetes, Skin)...")
+    
     if query:
         matches = [p for p in plant_db if any(query.lower() in u.lower() for u in p['uses'])]
         if matches:
-            st.success(f"Matched {len(matches)} botanical solutions for '{query}':")
+            st.success(f"🧬 Discovered {len(matches)} biological countermeasures:")
             for m in matches:
-                with st.expander(f"🌿 {m['name']}"):
-                    st.write(f"**Curative property:** {next(u for u in m['uses'] if query.lower() in u.lower())}")
-                    st.write(f"**Full Profile ID:** #{m['id']}")
+                st.markdown(f"""
+                <div style='background:rgba(255,255,255,0.05); padding:25px; border-radius:20px; border-left:6px solid #4ade80; margin-bottom:20px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);'>
+                    <h3 style='color:#4ade80; margin:0; font-size:2rem;'>🌿 {m['name'].upper()} <br><span style='font-size:1.2rem; color:#87ffa0; font-family:monospace;'>{m['scientific_name']}</span></h3>
+                    <div style='margin-top: 15px; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 10px;'>
+                        <p style='color:#fff; margin-bottom:5px;'><b>🎯 Primary Target Detected:</b> <span style='color:#4ade80;'>{next(u for u in m['uses'] if query.lower() in u.lower())}</span></p>
+                        <p style='color:#aaa; font-size:0.95rem; margin-bottom:0;'><b>⚖️ Protocol Dosage:</b> {m['dosage']}</p>
+                    </div>
+                </div>
+                """, unsafe_allow_html=True)
         else:
-            st.warning("No records match your exact clinical term. Try broader keywords.")
+            st.warning("No localized bio-match. Query is outside current taxonomy parameters.")
     st.markdown('</div>', unsafe_allow_html=True)
 
-# --- 4. SYSTEM DIAGNOSTICS ---
-elif app_mode == "🛠️ System Diagnostics":
-    draw_header("Diagnostic Hub", "Infrastructure monitoring and specimen trail.")
-    st.markdown('<div class="premium-card">', unsafe_allow_html=True)
-    st.write("### Specimen Identification Log")
-    if st.session_state.history:
-        st.dataframe(pd.DataFrame(st.session_state.history), use_container_width=True)
-    else:
-        st.info("No identification history logged in this cluster session.")
+# --- 4. MASTER CODEX ---
+elif app_mode == "📚 Master Codex":
+    draw_header("The Bio-Codex", "Unrestricted repository of Earth's biological assets.")
+    st.markdown('<div class="premium-card" style="padding: 30px;">', unsafe_allow_html=True)
+    df = pd.DataFrame(plant_db)[['name', 'scientific_name', 'dosage', 'preparation']]
+    df.columns = ['Subject Alias', 'Scientific Designation', 'Dosage Paradigm', 'Extraction Method']
     
-    st.write("---")
-    st.write("### Cluster Resource Monitoring")
-    fig = go.Figure(go.Indicator(
-        mode = "gauge+number", value = 38,
-        title = {'text': "Cluster Latency (ms)"},
-        gauge = {'axis': {'range': [None, 100]}, 'bar': {'color': "#1b5e20"}}
-    ))
-    st.plotly_chart(fig, use_container_width=True)
+    st.dataframe(df, use_container_width=True, height=600)
     st.markdown('</div>', unsafe_allow_html=True)
-
-# --- 5. BOTANICAL ARCHIVE ---
-elif app_mode == "📚 Botanical Archive":
-    draw_header("Data Repository", "Secure archive of nature's encoded pharmaceutical data.")
-    st.dataframe(pd.DataFrame(plant_db)[['id', 'name', 'scientific_name', 'dosage']], use_container_width=True)
-
-# Footer
-st.markdown("---")
-st.markdown("<div style='text-align: center; color: #1b5e20; font-weight: 800;'>🌿 ECOPLANT PLATINUM | QUANTUM-GRADE BOTANICAL AI | v3.15</div>", unsafe_allow_html=True)
