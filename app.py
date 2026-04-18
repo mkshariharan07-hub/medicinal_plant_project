@@ -47,14 +47,36 @@ st.markdown("""
         color: #e0f2e9 !important;
     }
 
-    /* Shimmering AI Text */
+    /* ALL-ENCOMPASSING VISIBILITY FIXES */
+    .stApp, [data-testid="stMarkdownContainer"] p, [data-testid="stWidgetLabel"] label, div.stMarkdown, span, p, h1, h2, h3, h4, h5, h6 {
+        color: #ffffff !important;
+    }
+
+    /* Fix Sidebar visibility for all nested components */
+    section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+    section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] label,
+    section[data-testid="stSidebar"] .st-emotion-cache-16idsys p,
+    section[data-testid="stSidebar"] .st-emotion-cache-16idsys span {
+        color: #ffffff !important;
+        opacity: 1 !important;
+    }
+
+    /* Force Radio & Selectbox text to white */
+    div[data-testid="stSidebarUserContent"] .st-emotion-cache-16idsys, 
+    div[data-testid="stSidebarUserContent"] label,
+    div[data-testid="stSidebarUserContent"] p {
+        color: white !important;
+        font-weight: 500 !important;
+    }
+
+    /* Shimmering AI Text (High Contrast) */
     .shimmer-text {
-        background: linear-gradient(90deg, #4ade80, #60a5fa, #4ade80);
+        background: linear-gradient(90deg, #4ade80, #ffffff, #4ade80);
         background-size: 200% auto;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: shine 4s linear infinite;
-        font-weight: 900;
+        font-weight: 950;
         font-size: 4.5rem;
         letter-spacing: -2px;
     }
@@ -64,19 +86,30 @@ st.markdown("""
 
     /* EcoPlantAI Glass Premium Card */
     .premium-card {
-        background: linear-gradient(145deg, rgba(25, 55, 35, 0.7), rgba(10, 25, 15, 0.85));
-        backdrop-filter: blur(30px);
-        border-radius: 24px;
-        border: 1px solid rgba(74, 222, 128, 0.25);
-        padding: 40px;
-        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,0.05);
-        margin-bottom: 30px;
-        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        background: linear-gradient(145deg, rgba(30, 70, 45, 0.4), rgba(10, 25, 15, 0.7));
+        backdrop-filter: blur(35px);
+        border-radius: 28px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 45px;
+        box-shadow: 0 25px 55px rgba(0, 0, 0, 0.6);
+        margin-bottom: 35px;
+        color: white !important;
     }
-    .premium-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 35px 75px rgba(74, 222, 128, 0.2), inset 0 1px 0 rgba(255,255,255,0.1);
-        border: 1px solid rgba(74, 222, 128, 0.5);
+    
+    /* Ensure Dataframes are readable */
+    div[data-testid="stDataFrame"] {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        border: 1px solid rgba(74, 222, 128, 0.2);
+    }
+    
+    /* Tabs visibility fix */
+    .stTabs [data-baseweb="tab"] {
+        color: #ffffff !important;
+        font-weight: 600 !important;
+    }
+    .stTabs [data-baseweb="tab"]:hover {
+        color: #4ade80 !important;
     }
 
     .plant-main-title {
@@ -84,29 +117,33 @@ st.markdown("""
         font-weight: 900;
         font-size: 4.8rem;
         margin-bottom: 0px;
-        text-shadow: 0 0 50px rgba(74, 222, 128, 0.5);
-        letter-spacing: -2px;
+        text-shadow: 0 0 50px rgba(74, 222, 128, 0.6);
+        letter-spacing: -2.5px;
     }
 
     .status-badge {
         background: linear-gradient(135deg, #10b981, #059669);
-        color: white;
-        padding: 10px 28px;
+        color: #ffffff !important;
+        padding: 12px 30px;
         border-radius: 100px;
-        font-size: 0.85rem;
-        font-weight: 800;
-        letter-spacing: 2.5px;
-        box-shadow: 0 0 25px rgba(16, 185, 129, 0.4);
+        font-size: 0.9rem;
+        font-weight: 900;
+        letter-spacing: 3px;
+        box-shadow: 0 0 30px rgba(16, 185, 129, 0.5);
         display: inline-block;
-        margin-bottom: 25px;
-        text-transform: uppercase;
+        margin-bottom: 30px;
     }
     
     div[data-testid="stMetricValue"] {
-        font-size: 3.2rem !important;
-        font-weight: 900 !important;
+        font-size: 3.5rem !important;
+        font-weight: 950 !important;
         color: #4ade80 !important;
-        text-shadow: 0 0 25px rgba(74, 222, 128, 0.4);
+        text-shadow: 0 0 30px rgba(74, 222, 128, 0.5);
+    }
+    
+    div[data-testid="stMetricDelta"] {
+        color: #ffffff !important;
+        font-weight: 700 !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -160,7 +197,7 @@ with st.sidebar:
         import random
         fact_plant = random.choice(plant_db)
         fact_use = random.choice(fact_plant['uses'])
-        st.markdown(f"<div style='background:rgba(74,222,128,0.1); padding:15px; border-radius:12px; border:1px solid rgba(74,222,128,0.3); font-size:0.85rem; line-height:1.4;'><b>{fact_plant['name']}</b>: {fact_use}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='background:rgba(74,222,128,0.15); padding:18px; border-radius:15px; border:1px solid rgba(74,222,128,0.4); font-size:0.9rem; line-height:1.5; color:white;'><b>{fact_plant['name']}</b>: {fact_use}</div>", unsafe_allow_html=True)
     
     st.markdown("<p style='color:#4ade80; font-size:0.85rem; margin-top:60px; font-weight:500;'>© 2026 EcoPlantAI Labs</p>", unsafe_allow_html=True)
 
@@ -226,8 +263,18 @@ if app_mode == "🛰️ Smart Vision Scan":
                     if api_data.get('results'):
                         best_match = api_data['results'][0]
                         sci_name = best_match['species']['scientificNameWithoutAuthor']
-                        plant_name = best_match['species'].get('commonNames', [sci_name])[0]
+                        family_name = best_match['species'].get('family', {}).get('scientificNameWithoutAuthor', 'Unknown')
+                        genus_name = best_match['species'].get('genus', {}).get('scientificNameWithoutAuthor', 'Unknown')
+                        common_names_list = best_match['species'].get('commonNames', [])
+                        plant_name = common_names_list[0] if common_names_list else sci_name
                         confidence = best_match['score']
+                        
+                        api_metadata = {
+                            "sci_name": sci_name,
+                            "family": family_name,
+                            "genus": genus_name,
+                            "commons": common_names_list
+                        }
                         
                         for p in plant_db:
                             if sci_name.lower() in p['scientific_name'].lower() or p['name'].lower() in sci_name.lower():
@@ -320,8 +367,28 @@ if app_mode == "🛰️ Smart Vision Scan":
                     st.markdown(f"<div style='background:rgba(255,255,255,0.08); padding:12px 22px; border-radius:50px; font-weight:700; border:1px solid rgba(74,222,128,0.2);'><span style='color:#4ade80; opacity:0.8;'>{k.upper()}:</span> {v}</div>", unsafe_allow_html=True)
                 st.markdown("</div>", unsafe_allow_html=True)
         else:
-            st.markdown(f'<div class="plant-main-title">{plant_name.upper()}</div>', unsafe_allow_html=True)
-            st.info("Specimen identified successfully. Local medicinal dataset entry pending.")
+            # ENHANCED FALLBACK: Botanical Intelligence from Pl@ntNet
+            c1, c2 = st.columns([1.4, 1])
+            with c1:
+                st.markdown(f'<div class="plant-main-title">{plant_name.upper()}</div>', unsafe_allow_html=True)
+                st.markdown(f"<h3 style='color:#60a5fa; font-family:monospace; margin-top:-12px; letter-spacing:2px; font-weight:600;'>\\ {api_metadata['sci_name']}</h3>", unsafe_allow_html=True)
+                
+                st.markdown("<br>", unsafe_allow_html=True)
+                q1, q2, q3 = st.columns(3)
+                q1.markdown(f"<div style='background:rgba(96,165,250,0.1); padding:10px; border-radius:10px; text-align:center;'><small style='display:block; opacity:0.6;'>Family</small><b>{api_metadata['family']}</b></div>", unsafe_allow_html=True)
+                q2.markdown(f"<div style='background:rgba(96,165,250,0.1); padding:10px; border-radius:10px; text-align:center;'><small style='display:block; opacity:0.6;'>Genus</small><b>{api_metadata['genus']}</b></div>", unsafe_allow_html=True)
+                q3.markdown(f"<div style='background:rgba(96,165,250,0.1); padding:10px; border-radius:10px; text-align:center;'><small style='display:block; opacity:0.6;'>Type</small><b>{api_metadata['genus']} Specimen</b></div>", unsafe_allow_html=True)
+            
+            with c2:
+                 st.info("ℹ️ **Botanical Notice:** This species was identified via the Pl@ntNet Global Archive. While its taxonomic details are verified, it is not currently flagged for specific medicinal properties in our local curated database.")
+                 st.markdown("<br>", unsafe_allow_html=True)
+                 st.markdown("##### Alternative Common Designations")
+                 for c in api_metadata['commons'][:5]:
+                     st.markdown(f"🔹 {c}")
+
+            st.markdown("<br>", unsafe_allow_html=True)
+            with st.expander("🔬 View Deep Taxonomic Intelligence"):
+                st.write(f"The **{api_metadata['sci_name']}** belongs to the **{api_metadata['family']}** family under the **{api_metadata['genus']}** genus. This plant is part of a global biodiversity network and contributes to the ecosystem's ecological balance.")
         st.markdown('</div>', unsafe_allow_html=True)
 
 # --- 2. ANALYTICS ---
