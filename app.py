@@ -153,7 +153,16 @@ with st.sidebar:
     app_mode = st.radio("CORE COMMANDS", 
                        ["🛰️ Smart Vision Scan", "📊 Analytics Dashboard", "🔍 Symptom Finder", "📚 Botanical Library"])
     
-    st.markdown("<p style='color:#4ade80; font-size:0.85rem; margin-top:100px; font-weight:500;'>© 2026 EcoPlantAI Labs</p>", unsafe_allow_html=True)
+    st.markdown("---")
+    # New Feature: Discovery Fact
+    st.markdown("<p style='color:#4ade80; font-weight:700; margin-bottom:10px;'>💡 INSIGHT OF THE DAY</p>", unsafe_allow_html=True)
+    if plant_db:
+        import random
+        fact_plant = random.choice(plant_db)
+        fact_use = random.choice(fact_plant['uses'])
+        st.markdown(f"<div style='background:rgba(74,222,128,0.1); padding:15px; border-radius:12px; border:1px solid rgba(74,222,128,0.3); font-size:0.85rem; line-height:1.4;'><b>{fact_plant['name']}</b>: {fact_use}</div>", unsafe_allow_html=True)
+    
+    st.markdown("<p style='color:#4ade80; font-size:0.85rem; margin-top:60px; font-weight:500;'>© 2026 EcoPlantAI Labs</p>", unsafe_allow_html=True)
 
 # --- HEADER HELPER ---
 def draw_header(title, subtitle):
@@ -295,6 +304,13 @@ if app_mode == "🛰️ Smart Vision Scan":
                 for u in plant['uses']: 
                     st.markdown(f"<div style='background:rgba(74, 222, 128, 0.08); padding:12px 18px; border-radius:12px; margin-bottom:10px; border-left:5px solid #10b981; font-weight:500;'>🔥 {u}</div>", unsafe_allow_html=True)
                 st.markdown(f"<div style='background:rgba(239, 68, 68, 0.1); padding:15px; border-radius:12px; border:1px solid rgba(239, 68, 68, 0.3); margin-top:20px; color:#f87171;'><b>⚠️ PRECAUTIONS:</b> {plant['precautions']}</div>", unsafe_allow_html=True)
+                
+                # New Enhancement: AI Protocol
+                st.markdown("<br>", unsafe_allow_html=True)
+                st.markdown("<div style='background:linear-gradient(90deg, rgba(74,222,128,0.1), rgba(96,165,250,0.1)); padding:20px; border-radius:15px; border:1px solid rgba(74,222,128,0.3);'>", unsafe_allow_html=True)
+                st.markdown(f"<h5 style='color:#4ade80; margin:0;'>🤖 AI WELLNESS PROTOCOL</h5>", unsafe_allow_html=True)
+                st.markdown(f"<p style='font-size:0.95rem; margin-top:10px; color:#e0f2e9;'>Based on the biological signature of <b>{plant['name']}</b>, our system recommends a controlled {plant['preparation']} cycle. This specimen is optimal for targeting <b>{plant['uses'][0].lower()}</b>.</p>", unsafe_allow_html=True)
+                st.markdown("</div>", unsafe_allow_html=True)
             with t2:
                 st.info(f"🥣 **Preparation:** {plant['preparation']}")
                 st.success(f"⚖️ **Dosage:** {plant['dosage']}")
@@ -323,11 +339,17 @@ elif app_mode == "📊 Analytics Dashboard":
     c1, c2 = st.columns([1.2, 1])
     with c1:
          st.markdown('<div class="premium-card">', unsafe_allow_html=True)
-         st.markdown("<h3 style='color:white; margin-bottom:20px;'>Neural Density Visualization</h3>", unsafe_allow_html=True)
-         z_data = np.random.rand(15, 15)
-         fig = go.Figure(data=go.Heatmap(z=z_data, colorscale='Viridis', showscale=False))
-         fig.update_layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', height=350, margin=dict(l=0, r=0, t=0, b=0))
-         st.plotly_chart(fig, use_container_width=True)
+         st.markdown("<h3 style='color:white; margin-bottom:20px;'>Ailment Spectrum Analysis</h3>", unsafe_allow_html=True)
+         # Extract all unique uses/ailments
+         all_uses = []
+         for p in plant_db:
+             for u in p['uses']:
+                 all_uses.append(u.split(' ')[0].capitalize()) # Simple keyword extractor
+         ailment_counts = pd.Series(all_uses).value_counts().head(8)
+         fig_ailment = px.bar(x=ailment_counts.index, y=ailment_counts.values, labels={'x':'Category', 'y':'Plant Matches'})
+         fig_ailment.update_traces(marker_color='#10b981', marker_line_color='#4ade80', marker_line_width=1.5, opacity=0.8)
+         fig_ailment.update_layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', font={'color': 'white'}, height=350, margin=dict(l=0, r=0, t=50, b=0))
+         st.plotly_chart(fig_ailment, use_container_width=True)
          st.markdown('</div>', unsafe_allow_html=True)
          
     with c2:
